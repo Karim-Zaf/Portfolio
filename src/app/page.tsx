@@ -9,8 +9,8 @@ export default function Home() {
     < >
         <div className="h-screen rounded-md bg-neutral-900 flex flex-col items-center justify-center relative w-full"> 
         
-        <ShootingStars className="z-0"/>
-        <StarsBackground  className="z-0"/>
+         <StarsBackground  className="z-0"/>
+        <ShootingStars className="z-0"/> 
              <MainPage />
             
             

@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes borderAnimation {
+    0% {
+      border-color: transparent;
+    }
+    25% {
+      border-color: #c400da; /* Red */
+    }
+    50% {
+      border-color: #00f2ff; /* Green */
+    }
+    75% {
+      border-color: #3919ea; /* Blue */
+    }
+    100% {
+      border-color: transparent;
+    }
+  }
+  
+  @layer utilities {
+    .border-animated {
+      border-width: 4px;
+      border-style: solid;
+      animation: borderAnimation 4s infinite;
+    }
+  }

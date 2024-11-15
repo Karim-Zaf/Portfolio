@@ -11,10 +11,9 @@ function MainPage() {
     const [page , setPage] = useState("home") ;
 
   return (
-    <>
+    <div className="z-20" >
       <Navbara currentPage={page} setPage={setPage} className="z-50"/>
 
-      <div className='bg-slate-50'>{page}</div>
 
       {page === "home" && <HomePage />}
       {page === "about" && <About />}
@@ -22,7 +21,7 @@ function MainPage() {
           
     
                
-    </>
+    </div>
   )
 }
 

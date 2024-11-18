@@ -12,7 +12,7 @@ function About() {
           w-[70%] text-xl text-white h-1 bg-gradient-to-r  mb-16 text-center' >
           Here you will find a list of my projects
         </div>
-        <Card className='md:w-[1000px] w-[90%] mb-8 shadow-lg bg-neutral-800'>
+        <Card className='md:w-[1000px] w-[90%] mb-8 shadow-lg bg-neutral-800 text-white'>
             <CardTitle className='p-6 flex gap-7'>
                 WHO AM I?
             </CardTitle>

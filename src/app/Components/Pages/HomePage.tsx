@@ -1,9 +1,10 @@
 import React from 'react';
 import { Typewriter } from "react-simple-typewriter";
+import MyLinks from '../MyLinks';
 
 function HomePage() {
   return (
-    <>
+    <div className='flex flex-col justify-center items-center'>
       <div className='flex justify-center items-center gap-10 flex-col top-6'>
         
        
@@ -16,7 +17,7 @@ function HomePage() {
             
         </div>
       </div>
-      <div className="text-3xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white">
+      <div className="h-10 text-3xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white">
           <Typewriter
           words={[
             'Full Stack Developer',
@@ -24,10 +25,23 @@ function HomePage() {
             'Competitive Programmer',
           ]}
           loop
-          
+      
         /></div>
-          
-    </>
+      <a
+        href='CV_Karim_Zaafrani_EN.pdf'
+        download
+        className='mt-8 px-6 py-3 bg-blue-500 text-white font-bold rounded hover:bg-blue-600 transition duration-300'
+      >
+        Download CV
+      </a>
+
+      <div className='w-32 flex justify-between mt-4'>
+          <MyLinks imageLink="SocialMedia/LinkedIn.png" placeHolder="Linkedin" link="https://www.linkedin.com/in/karim-zaafrani-148868209/" />
+          <MyLinks imageLink="SocialMedia/codeforces.webp" placeHolder="Codeforces" link="https://codeforces.com/profile/Kairm_Zaf" />
+          <MyLinks imageLink="SocialMedia/github.png" placeHolder="Github" link="https://github.com/Karim-Zaf" className="bg-white" />
+
+      </div>
+    </div>
   );
 }
 

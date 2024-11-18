@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 
 function Navbara({ currentPage, setPage }: any) {
   const [isOpen, setIsOpen] = useState(false);
-  const options = ['home', 'about', 'projects', 'contact', 'certificates','Competitions'];
+  const options = ['home', 'about', 'projects', 'contact', 'certificates','competitions'];
 
   return (
     <div className="h-16 fixed right-0 top-0 w-screen shadow-md flex justify-between items-center px-8 border-b-2 border-b-slate-300  z-50">

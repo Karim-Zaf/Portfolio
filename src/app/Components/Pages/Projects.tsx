@@ -12,6 +12,7 @@ function Projects() {
       sourceCodeLink: "https://www.github.com",
       WebSiteLink: "https://www.google.com",
     },
+    
   ];
 
   return (
@@ -22,8 +23,8 @@ function Projects() {
       <div className='mt-8 w-full text-xl text-white h-1 bg-gradient-to-r mb-16 text-center'>
         Here you will find a list of my projects
       </div>
-      {projects.map(({ title, description, technologies, ImageLink, sourceCodeLink, WebSiteLink }) => (
-        <Card key={title} className='md:w-[1000px] w-[90%] mb-8 shadow-lg bg-neutral-800'>
+      {projects.map(({ title, description, technologies, ImageLink, sourceCodeLink, WebSiteLink }, index) => (
+        <Card key={index} className='md:w-[1000px] w-[90%] mb-8 shadow-lg bg-neutral-800'>
           <CardContent className='p-6 flex flex-col md:flex-row gap-7'>
             <img src={ImageLink} alt={title} className='w-full md:w-96 h-auto mb-4 rounded' />
             <div>

@@ -20,7 +20,7 @@ function HomePage() {
       <div className="h-10 text-3xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white">
           <Typewriter
           words={[
-            'Full Stack Developer',
+            'Full Stack Developper',
             'Software Engineer',
             'Competitive Programmer',
           ]}

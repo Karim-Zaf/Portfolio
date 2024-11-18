@@ -18,13 +18,11 @@ function Projects() {
     <div className='w-full flex flex-col items-center py-8'>
 
             <h2 className="relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8 border-b-4 pb-2">
-
-                  <span>My Projects</span>
-              </h2>
+                <span>My Projects</span>
+            </h2>
             <div className='mt-8
-            w-full text-xl text-white h-1 bg-gradient-to-r  mb-16 ' >
-        Here you will find a list of my projects
-      </div>
+            w-full text-xl text-white h-1 bg-gradient-to-r  mb-16 text-center'>Here you will find a list of my projects
+            </div>
       {projects.map(({ title, description, technologies, ImageLink, sourceCodeLink, WebSiteLink }) => (
         <Card key={title} className='md:w-[1000px] w-[90%] mb-8 shadow-lg bg-neutral-800'>
           <CardContent className='p-6 flex gap-7'>

@@ -5,6 +5,7 @@ import HomePage from './Pages/HomePage';
 import About from './Pages/About';
 import Projects from './Pages/Projects';
 import Navbara from './Navbara';
+import Certificates from './Pages/Certificates';
 
 function MainPage() {
    
@@ -18,7 +19,7 @@ function MainPage() {
       {page === "home" && <HomePage />}
       {page === "about" && <About />}
       {page === "projects" && <Projects />}
-          
+          {page === "certificates" && <Certificates />}
     
                
     </div>

@@ -8,7 +8,7 @@ function Navbara({ currentPage, setPage }: any) {
   const options = ['home', 'about', 'projects', 'contact', 'certificates','competitions'];
 
   return (
-    <div className="h-16 fixed right-0 top-0 w-screen shadow-md flex justify-between items-center px-8 border-b-2 border-b-slate-300  z-50">
+    <div className="h-16 fixed right-0 top-0 w-screen shadow-md flex justify-between items-center px-8 border-b-2 border-b-slate-300  z-50 mb-24 bg-stone-950">
       <div className="text-2xl font-bold">
         <Logo />
       </div>
@@ -48,7 +48,7 @@ function Navbara({ currentPage, setPage }: any) {
         </button>
       </div>
       {isOpen && (
-        <div className="md:hidden absolute top-16 right-0 w-full bg-gray-950 shadow-md flex flex-col items-center space-y-4 py-4">
+        <div className="md:hidden absolute top-16 right-0 w-full bg-stone-950 shadow-md flex flex-col items-center space-y-4 py-4">
           {options.map((option) => (
             <Button
               onClick={() => {

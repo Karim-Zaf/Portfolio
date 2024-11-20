@@ -30,7 +30,7 @@ export default function RootLayout({
       <link rel="icon" href="identity_picture.jpeg" />
       
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         {children}
       </body>

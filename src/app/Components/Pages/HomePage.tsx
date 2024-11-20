@@ -4,7 +4,7 @@ import MyLinks from '../MyLinks';
 
 function HomePage() {
   return (
-    <div className='flex flex-col justify-center items-center'>
+    <div className='min-h-screen flex flex-col justify-center items-center '>
       <div className='flex justify-center items-center gap-10 flex-col top-6'>
         
        

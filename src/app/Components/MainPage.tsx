@@ -16,8 +16,7 @@ function MainPage() {
 
   return (
     <div className="z-20" >
-      <Navbara currentPage={page} setPage={setPage} className="z-50"/>
-
+      <Navbara currentPage={page} setPage={setPage} className=""/>
 
       {page === "home" && <HomePage />}
       {page === "about" && <About />}

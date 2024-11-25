@@ -32,7 +32,7 @@ function HomePage() {
         download
         className='mt-8 px-6 py-3 bg-blue-500 text-white font-bold rounded hover:bg-blue-600 transition duration-300'
       >
-        Download CV
+        Download Resume
       </a>
 
       <div className='w-32 flex justify-between mt-4'>

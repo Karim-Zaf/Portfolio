@@ -29,7 +29,7 @@ function Navbara({ currentPage, setPage }: any) {
       <div className="md:hidden">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="text-gray-800 focus:outline-none"
+          className="text-white focus:outline-none"
         >
           <svg
             className="w-6 h-6"

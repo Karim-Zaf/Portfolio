@@ -46,7 +46,7 @@ function Certificates() {
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
         {certificates.map(({ title, skills, ImageLink, WebSiteLink }) => (
-          <Card key={title} className='w-[420px] shadow-lg bg-neutral-800'>
+          <Card key={title} className='sm:w-[420px] w-[90%] m-auto shadow-lg bg-neutral-800'>
             <CardContent className='p-6 flex flex-col justify-center items-center gap-7'>
               <img src={ImageLink} alt={title} className='w-96 h-auto mb-4 rounded' />
               <div>

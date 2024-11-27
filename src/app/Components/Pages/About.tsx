@@ -13,7 +13,7 @@ function About() {
           
         </div>
 
-        <Card className='md:w-[1000px] w-[90%] mb-8 shadow-lg bg-neutral-800 text-white'>
+        <Card className='lg:w-[1000px] w-[90%] mb-8 shadow-lg bg-neutral-800 text-white'>
             <CardTitle className='p-6 flex gap-7 bg-neutral-700 rounded-t-xl'>
                 WHO AM I?
             </CardTitle>

@@ -20,12 +20,11 @@ function HomePage() {
       <div className="h-10 text-3xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white">
           <Typewriter
           words={[
-            'Full Stack Developper',
-            'Software Engineer',
+            'Computer Science Student',
             'Competitive Programmer',
+            'Full Stack Developer'
           ]}
           loop
-      
         /></div>
       <a
         href='CV_Karim_Zaafrani_EN.pdf'

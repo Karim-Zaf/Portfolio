@@ -5,21 +5,33 @@ import React from 'react';
 function Certificates() {
   let certificates = [
     {
-      title: "TodoLista",
-      skills: ["React", "Tailwind", "Typescript"],
-      ImageLink: "/Certificates images/Diplome16.png",
+      title: "DELF B2",
+      skills: ["Français"],
+      ImageLink: "Certificates images/DELF B2.png",
       WebSiteLink: "https://www.google.com",
     },
     {
-      title: "TodoLista",
-      skills: ["React", "Tailwind", "Typescript"],
-      ImageLink: "/Certificates images/Diplome17.jpg",
+      title: "Getting Started with git and github",
+      skills: ["Git", "Github"],
+      ImageLink: "Certificates images/Getting Started with Git and Github.png",
       WebSiteLink: "https://www.google.com",
     },
     {
-      title: "TodoLista",
-      skills: ["React", "Tailwind", "Typescript"],
-      ImageLink: "/Certificates images/Diplome19.png",
+      title: "Machine Learning Specialization",
+      skills: ["Machine Learning", "Supervised Leraning", "Unsupervised Learning"],
+      ImageLink: "Certificates images/Supervised Machine Learning: Regression and classification.png",
+      WebSiteLink: "https://www.google.com",
+    },
+    {
+      title: "Tunisian Colegiate Programming Contest 2024 (TPCP 2024)",
+      skills: ["Problem Solving" , "Competitive Programming"],
+      ImageLink: "Certificates images/TCPC 2024.png",
+      WebSiteLink: "https://www.google.com",
+    },
+    {
+      title: "Meta Hacker Cup 2024",
+      skills: ["Problem Solving" , "Competitive Programming"],
+      ImageLink: "Certificates images/Hacker CUP 2024.png",
       WebSiteLink: "https://www.google.com",
     },
   ];
@@ -32,9 +44,9 @@ function Certificates() {
       <div className='mt-8 w-full text-xl text-white h-1 bg-gradient-to-r mb-16 text-center'>
         Here you will find a list of my certificates
       </div>
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
         {certificates.map(({ title, skills, ImageLink, WebSiteLink }) => (
-          <Card key={title} className='shadow-lg bg-neutral-800'>
+          <Card key={title} className='w-[420px] shadow-lg bg-neutral-800'>
             <CardContent className='p-6 flex flex-col justify-center items-center gap-7'>
               <img src={ImageLink} alt={title} className='w-96 h-auto mb-4 rounded' />
               <div>

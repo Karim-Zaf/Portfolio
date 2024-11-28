@@ -12,12 +12,14 @@ function ContactPage() {
       </div>
       <Card className='md:w-[600px] w-[90%] mb-8 shadow-lg bg-neutral-800'>
         <CardContent className='p-6'>
-          <form className='flex flex-col gap-4'>
+          <form action="https://api.web3forms.com/submit" method="POST" className='flex flex-col gap-4'>
+            <input type="hidden" name="access_key" value="0ae40cc4-6c26-41c6-ba33-a186a9a17886"/>
             <div>
               <label htmlFor='name' className='block text-gray-300 mb-2'>Name</label>
               <input
                 type='text'
                 id='name'
+                name='name'
                 className='w-full px-4 py-2 bg-gray-700 text-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500'
               />
             </div>
@@ -26,6 +28,7 @@ function ContactPage() {
               <input
                 type='email'
                 id='email'
+                name='email'
                 className='w-full px-4 py-2 bg-gray-700 text-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500'
               />
             </div>
@@ -34,6 +37,7 @@ function ContactPage() {
               <textarea
                 id='message'
                 rows={4}
+                name='message'
                 className='w-full px-4 py-2 bg-gray-700 text-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500'
               ></textarea>
             </div>

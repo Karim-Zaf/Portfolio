@@ -84,6 +84,12 @@
         "WebSiteLink": "https://www.google.com"
     },
     {
+        "title": "ACPC 2024",
+        "skills": ["Competitive Programming"],
+        "ImageLink": "Certificates images/ACPC 2024.png",
+        "WebSiteLink": "https://www.google.com"
+    },
+    {
         "title": "TCPC 2024",
         "skills": ["Competitive Programming"],
         "ImageLink": "Certificates images/TCPC 2024.png",

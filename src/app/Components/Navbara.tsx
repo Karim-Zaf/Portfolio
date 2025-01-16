@@ -7,7 +7,7 @@ import { useRouter, usePathname } from 'next/navigation';
 
 function Navbara() {
   const [isOpen, setIsOpen] = useState(false);
-  const options = ['home', 'about', 'projects', 'certificates', 'contact'];
+  const options = ['home', 'about', 'projects', 'certificates', 'competitions','contact'];
   const router = useRouter();
   const pathname = usePathname(); // Récupère le chemin actuel (ex: "/contact")
 

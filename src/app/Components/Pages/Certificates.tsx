@@ -1,41 +1,9 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import React from 'react';
-
+import certificates from './cerficates.json'
 function Certificates() {
-  let certificates = [
-    {
-      title: "DELF B2",
-      skills: ["Français"],
-      ImageLink: "Certificates images/DELF B2.png",
-      WebSiteLink: "https://www.google.com",
-    },
-    {
-      title: "Getting Started with git and github",
-      skills: ["Git", "Github"],
-      ImageLink: "Certificates images/Getting Started with Git and Github.png",
-      WebSiteLink: "https://www.google.com",
-    },
-    {
-      title: "Machine Learning Specialization",
-      skills: ["Machine Learning", "Supervised Leraning", "Unsupervised Learning"],
-      ImageLink: "Certificates images/Supervised Machine Learning: Regression and classification.png",
-      WebSiteLink: "https://www.google.com",
-    },
-    {
-      title: "Tunisian Colegiate Programming Contest 2024 (TPCP 2024)",
-      skills: ["Problem Solving" , "Competitive Programming"],
-      ImageLink: "Certificates images/TCPC 2024.png",
-      WebSiteLink: "https://www.google.com",
-    },
-    {
-      title: "Meta Hacker Cup 2024",
-      skills: ["Problem Solving" , "Competitive Programming"],
-      ImageLink: "Certificates images/Hacker CUP 2024.png",
-      WebSiteLink: "https://www.google.com",
-    },
-  ];
-
+  
   return (
     <div className='w-full flex flex-col items-center py-8 min-h-screen md:mt-28 mt-20'>
       <h2 className="relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8 border-b-4 pb-2">

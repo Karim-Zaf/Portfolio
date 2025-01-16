@@ -35,14 +35,14 @@ export default function CompetitionsPage() {
       <h2 className="mt-24 relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8 border-b-4 pb-2 mb-8">
         <span>Diga Diga</span>
       </h2>
-      
+{/*       
       <Slider {...settings} className="  mb-8 md:w-[900px] w-[90%]  md:h-[500px] h-[300px]">
         {competitionImages.map((src, index) => (
           <div key={index}>
             <img src={src} alt={`Slide ${index}`} className=' md:w-[900px] w-[90%]  md:h-[500px] h-[300px] object-cover rounded-3xl' />
           </div>
         ))}
-      </Slider>
+      </Slider> */}
 
      
 

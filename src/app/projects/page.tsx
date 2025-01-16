@@ -5,7 +5,7 @@ import projects from './projects.json'
 function Projects() {
   
   return (
-    <div className='w-full flex flex-col items-center py-8 min-h-screen '>
+    <div className='w-full flex flex-col  items-center py-8 min-h-screen '>
       <h2 className="md:mt-28 mt-20 relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8 border-b-4 pb-2">
         <span>My Projects</span>
       </h2>
@@ -14,7 +14,7 @@ function Projects() {
       </div>
       {projects.map(({ title, description, technologies, imageLink, sourceCodeLink, webSiteLink }, index) => (
         <Card key={index} className='md:w-[1000px] w-[90%] mb-8 shadow-lg bg-neutral-800'>
-          <CardContent className='p-6 flex flex-col md:flex-row gap-7'>
+          <CardContent className='p-6 flex flex-col md:flex-row gap-7 w-full'>
             <img src={imageLink} alt={title} className='w-full md:w-96 h-auto mb-4 rounded' />
             <div>
               <h1 className='text-2xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white'>

@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Portfolio",
+        "description": "A personal website to showcase all my projects and skills. It helps people learn more about my work and experience.",
+        "technologies": ["NextJS", "React", "Tailwind", "Typescript", "ShadcnUI"],
+        "imageLink": "/Projects images/Portfolio.png",
+        "sourceCodeLink": "https://github.com/Karim-Zaf/Tic-Tac-Toe?tab=readme-ov-file",
+        "webSiteLink": "http://karim-zaafrani.vercel.app/"
+    },
+    {
+        "title": "TodoLista",
+        "description": "A task management app where users can add, edit, and delete tasks. It uses a PostgreSQL database to store tasks and has a clean design.",
+        "technologies": ["NextJS", "React", "Tailwind", "Typescript", "Prisma", "RESTFUL API", "ShadcnUI"],
+        "imageLink": "/Projects images/todolista.png",
+        "sourceCodeLink": "https://github.com/Karim-Zaf/ToDoLista",
+        "webSiteLink": "https://github.com/Karim-Zaf/ToDoLista"
+    },
+    {
+        "title": "Ahkili",
+        "description": "A web app where users can ask questions and get answers. It has a simple and user-friendly design that works well on all devices.",
+        "technologies": ["NextJS", "React", "Tailwind", "Typescript", "ShadcnUI"],
+        "imageLink": "/Projects images/Ahkili.png",
+        "sourceCodeLink": "https://github.com/Karim-Zaf/Ahkili?tab=readme-ov-file",
+        "webSiteLink": "https://ahkili.vercel.app/"
+    },
+    {
+        "title": "Calculator",
+        "description": "A basic calculator app for simple math operations like addition, subtraction, multiplication, and division. It has a modern look and is easy to use.",
+        "technologies": ["NextJS", "React", "Tailwind", "Typescript"],
+        "imageLink": "/Projects images/Calculator.png",
+        "sourceCodeLink": "https://github.com/Karim-Zaf/Calculator?tab=readme-ov-file",
+        "webSiteLink": "https://calculator-five-wheat-57.vercel.app/"
+    },
+    {
+        "title": "TIC TAC TOE GAME",
+        "description": "A simple Tic Tac Toe game where two players can play against each other. It has a clean design and is easy to understand.",
+        "technologies": ["NextJS", "React", "Tailwind", "Typescript"],
+        "imageLink": "/Projects images/TicTacToe.png",
+        "sourceCodeLink": "https://github.com/Karim-Zaf/Tic-Tac-Toe?tab=readme-ov-file",
+        "webSiteLink": "https://tic-tac-toe-seven-virid.vercel.app/"
+    }
+]
+  
+  

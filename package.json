@@ -24,7 +24,7 @@
     "react-slick": "^0.30.3",
     "react-typed": "^2.0.12",
     "slick-carousel": "^1.8.1",
-    "swiper": "^8.4.5",
+    "swiper": "^11.2.1",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7"
   },

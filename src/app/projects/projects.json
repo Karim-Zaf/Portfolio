@@ -1,5 +1,13 @@
 [
     {
+        "title": "Plantaneuse",
+        "description": "A university teamwork project focused on creating a plant shop website. The main feature is a powerful search algorithm using TF-IDF to make finding plants fast and efficient. The goal was to build a highly performant and user-friendly platform.",
+        "technologies": ["Laravel", "PHP", "Python", "Flask", "Tailwind", "JavaScript", "SupaBase"],
+        "imageLink": "/Projects images/Plantaneuse.png",
+        "sourceCodeLink": "https://github.com/isicparis/ISIcPARIS",
+        "webSiteLink": "http://karim-zaafrani.vercel.app/"
+        
+    },{
         "title": "Portfolio",
         "description": "A personal website to showcase all my projects and skills. It helps people learn more about my work and experience.",
         "technologies": ["NextJS", "React", "Tailwind", "Typescript", "ShadcnUI"],

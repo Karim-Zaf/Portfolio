@@ -30,12 +30,12 @@ function Projects() {
               </div>
               <div className='flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4'>
                 <Button className='bg-blue-500 hover:bg-blue-600 text-white'>
-                  <a href={sourceCodeLink} className='hover:underline'>
+                  <a href={sourceCodeLink} target="_blank" rel="noopener noreferrer" className='hover:underline'>
                     Source Code
                   </a>
                 </Button>
                 <Button className='bg-green-500 hover:bg-green-600 text-white'>
-                  <a href={webSiteLink} className='hover:underline'>
+                  <a href={webSiteLink} target="_blank" rel="noopener noreferrer" className='hover:underline'>
                     Website
                   </a>
                 </Button>

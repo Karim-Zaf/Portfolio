@@ -21,6 +21,37 @@ function About() {
               I am a dedicated computer science student currently pursuing a dual degree at Tunis El Manar University’s Higher Institute of Computer Science of Ariana and IUT Villetaneuse par of Sorbonne Paris Nord University. With a strong passion for technology, I specialize in competitive programming, Machine Learning, Web Development, Devops and Video Editing. I am constantly seeking opportunities to expand my knowledge and hone my skills, believing that perseverance and hard work are key to achieving excellence. I am driven by problem-solving and eager to contribute to innovative projects. I am excited to apply my abilities during a 14 to 16-week internship starting March 10, 2025, where I look forward to taking on new challenges, learning from experienced professionals, and making meaningful contributions to the field.
             </CardContent>
         </Card>
+
+        {/* <Card className="lg:w-[1000px] w-[90%] mb-8 shadow-lg bg-neutral-800 text-white">
+        <CardTitle className="p-6 flex gap-7 bg-neutral-700 rounded-t-xl">
+          Skills
+        </CardTitle>
+        <CardContent className="p-6 space-y-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <h3 className="text-lg font-bold mb-2">Programming Languages</h3>
+              <p>JavaScript, Python, C++, Java</p>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold mb-2">Web Development</h3>
+              <p>React, Next.js, Tailwind CSS, HTML, CSS</p>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold mb-2">Tools & Platforms</h3>
+              <p>Git, Docker, Linux, Figma</p>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold mb-2">Databases</h3>
+              <p>MySQL, MongoDB, PostgreSQL</p>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold mb-2">Other Skills</h3>
+              <p>Problem-solving, Debugging, API Development</p>
+            </div>
+          </div>
+        </CardContent>
+      </Card> */}
+
     </div>
   )
 }

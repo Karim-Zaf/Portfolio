@@ -10,6 +10,7 @@ import { Card, CardContent, CardTitle } from '@/components/ui/card';
 export default function CompetitionsPage() {
   const slides_ACPC = Array.from({ length: 28 }, (_, i) => i + 1);
   const slides_TCPC = Array.from({ length: 7 }, (_, i) => i + 1);
+  const slides_instructor = Array.from({ length: 4 }, (_, i) => i + 1);
   const fichiers = [
     "ACPC_28.jpg",
     "1706869629285.jpeg",
@@ -75,7 +76,7 @@ export default function CompetitionsPage() {
           </SwiperSlide>
         ))}
       </Swiper>
-
+          
       <h2 className=" relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8 border-b-4 pb-2 mb-8">
         <span>TCPC 2024</span>
       </h2>
@@ -93,7 +94,7 @@ export default function CompetitionsPage() {
         ))}
       </Swiper>
 
-
+      
       <Card className='lg:w-[1000px] w-[90%] mb-8 shadow-lg bg-neutral-800 text-white'>
         <CardTitle className='p-6 flex gap-7 bg-neutral-700 rounded-t-xl'>
           Problem Solving and Competitive Programming
@@ -121,6 +122,22 @@ export default function CompetitionsPage() {
         In addition, I run a personal YouTube channel where I share recordings of the contests I participate in. My goal is to inspire and motivate others by showing the strategies and approaches I use during competitions. I hope to encourage brilliant minds to dive into problem-solving and competitive programming.
         </CardContent>
       </Card>
+
+
+
+      <Swiper
+        pagination={{ type: 'fraction' }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mb-8 md:w-[900px] w-[90%] md:h-[500px] h-[300px]"
+        autoplay={{ delay: 1000, disableOnInteraction: false }}
+      >
+        {slides_instructor.map((i) => (
+          <SwiperSlide key={i}>
+            <img src={`Instructor/Instructor_${i}.png`} alt={`Slide ${i}`} className='md:w-[900px] w-[90%] md:h-[500px] h-[300px] object-cover rounded-3xl' />
+          </SwiperSlide>
+        ))}
+      </Swiper>   
 
     </div>    
   );

@@ -38,7 +38,7 @@ export default function CompetitionsPage() {
         navigation={true}
         modules={[Pagination, Navigation]}
         autoplay={{ delay: 1000, disableOnInteraction: false }}
-        className="mb-8 md:w-[900px] w-[90%] md:h-[500px] h-[300px]"
+        className="mb-8 lg:w-[900px] w-[600px] lg:h-[500px] h-[300px]"
       >
         {fichiers.map((image_) => (
           <SwiperSlide key={image_}>
@@ -67,7 +67,7 @@ export default function CompetitionsPage() {
         pagination={{ type: 'fraction' }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mb-8 md:w-[900px] w-[90%] md:h-[500px] h-[300px]"
+        className="mb-8 lg:w-[900px] w-[600px] lg:h-[500px] h-[300px]"
         autoplay={{ delay: 1000, disableOnInteraction: false }}
       >
         {slides_ACPC.map((i) => (
@@ -84,7 +84,7 @@ export default function CompetitionsPage() {
         pagination={{ type: 'fraction' }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mb-8 md:w-[900px] w-[90%] md:h-[500px] h-[300px]"
+        className="mb-8 lg:w-[900px] w-[550px] lg:h-[500px] h-[300px]"
         autoplay={{ delay: 1000, disableOnInteraction: false }}
       >
         {slides_TCPC.map((i) => (
@@ -94,14 +94,16 @@ export default function CompetitionsPage() {
         ))}
       </Swiper>
 
-      
+      <h2 className=" relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8 border-b-4 pb-2 mb-8">
+        <span>My passion for Competitive Programming</span>
+      </h2>
       <Card className='lg:w-[1000px] w-[90%] mb-8 shadow-lg bg-neutral-800 text-white'>
         <CardTitle className='p-6 flex gap-7 bg-neutral-700 rounded-t-xl'>
           Problem Solving and Competitive Programming
         </CardTitle>
         <CardContent className='p-6 flex flex-col'>
           I have been passionate about problem solving and competitive programming for almost three years now. I enjoy learning new things through contests and improving my skills every week.
-          <div className='flex gap-2'> I participate in weekly contests on popular platforms like 
+          <div className='flex flex-wrap gap-2'> I participate in weekly contests on popular platforms like 
             <a href="https://codeforces.com/profile/Kairm_Zaf" target="_blank" rel="noopener noreferrer" className=' underline text-purple-600'>Codeforces</a>, 
             <a href="https://atcoder.jp/users/Kairm_Zaf" target="_blank" rel="noopener noreferrer" className=' underline text-purple-600'>AtCoder</a>, and 
             <a href="https://www.codechef.com/users/kairm_zaf" target="_blank" rel="noopener noreferrer" className=' underline text-purple-600'>CodeChef</a>.
@@ -129,7 +131,8 @@ export default function CompetitionsPage() {
         pagination={{ type: 'fraction' }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mb-8 md:w-[900px] w-[90%] md:h-[500px] h-[300px]"
+
+        className="mb-8 lg:w-[900px] w-[600px] lg:h-[500px] h-[300px]"
         autoplay={{ delay: 1000, disableOnInteraction: false }}
       >
         {slides_instructor.map((i) => (

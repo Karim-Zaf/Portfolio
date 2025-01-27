@@ -1,7 +1,11 @@
 import { Card, CardContent, CardTitle } from '@/components/ui/card'
 import React from 'react'
+import skills from "./skills.json"
+import MyLinks from '../Components/MyLinks'
 
 function About() {
+
+  
   return (
     <div className='w-full flex flex-col items-center py-8 min-h-screen '>
         <h2 className="md:mt-32 mt-20 relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8 border-b-4 pb-2">
@@ -52,6 +56,46 @@ function About() {
         </CardContent>
       </Card> */}
 
+        <h2 className="mb-6 mt-4 relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8 border-b-4 pb-2">
+            <span>Skills</span>
+        </h2>
+      {
+        skills.map(({ category, technologies }) => {
+          return <>
+          <Card className='lg:w-[750px] w-[90%] mb-2 shadow-lg bg-neutral-800 text-white flex'>
+            <CardTitle className='md:w-[180px] w-[120px] md:text-md text-sm flex flex-col items-center justify-center md:p-6 p-2 text-center  gap-7 bg-neutral-700 rounded-l-xl'>
+                {category}
+            </CardTitle>
+            <CardContent className='flex flex-wrap gap-3 justify-center items-center p-auto w-full p-4'>
+            {
+              technologies.map((technology) => {
+                return (
+                  <div key={technology} className="m-auto w-12 h-12 relative group bg-gray-700 text-gray-300 rounded p-2">
+                    {/* <img
+                      src={`https://cdn.simpleicons.org/${current_technology.toLowerCase()}`}
+                      hata lien hedha behiiiiiii: https://www.svgrepo.com/svg/452141/adobe-after-effects
+                      alt={technology}
+                      className="w-6 h-6"
+                    /> */}
+                    <img
+                      src={`technologies icons/${technology.toLowerCase()}.svg`}
+                      alt={technology}
+                      className="w-full h-full"
+                    />
+                    <div className='absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 hidden group-hover:flex items-center justify-center bg-gray-800 text-white text-xs font-bold py-1 px-2 rounded'>
+                      {technology}
+                    </div>
+                  </div>
+                );
+              })
+            }
+
+            </CardContent>
+        </Card>
+          </>
+        })
+        
+      }
     </div>
   )
 }

@@ -1,0 +1,34 @@
+[
+    {
+      "category": "Programming Languages",
+      "technologies": ["C", "C++", "Python", "Java", "JavaScript", "TypeScript", "HTML5", "CSS3", "PHP"]
+    },
+    {
+      "category": "Frameworks",
+      "technologies": ["ReactJS", "NextJS", "TailwindCSS", "Bootstrap", "NodeJS", "ExpressJS", "Laravel", "Flask", "Django"]
+    },
+    {
+      "category": "Databases",
+      "technologies": ["MySQL", "PLSQL", "Oracle", "Redis", "MongoDB", "PostgreSQL", "SQLite"]
+    },
+    {
+      "category": "Machine Learning",
+      "technologies": ["TensorFlow", "Matplotlib", "Scikit-learn", "PyTorch", "Pandas", "NumPy", "Keras", "OpenCV"]
+    },
+    {
+      "category": "Version Control",
+      "technologies": ["Git", "GitHub", "GitLab"]
+    },
+    {
+      "category": "Video Editing",
+      "technologies": ["Adobe Premiere Pro", "Adobe After Effects", "Adobe Photoshop"]
+    },
+    {
+      "category": "Tools",
+      "technologies": ["Postman", "Docker", "Kubernetes", "Figma", "Visual Studio Code", "IntelliJ IDEA", "JUnit", "Apache Tomcat","Jenkins"]
+    },
+    {
+      "category": "Project Management",
+      "technologies": ["Scrum", "Kanban"]
+    }
+]

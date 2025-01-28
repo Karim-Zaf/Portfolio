@@ -69,6 +69,8 @@ function About() {
             <CardContent className='flex flex-wrap gap-3 justify-center items-center p-auto w-full p-4'>
             {
               technologies.map((technology) => {
+                let technology_file = technology
+                if (technology=== "C++") technology_file = "Cplusplus";
                 return (
                   <div key={technology} className="m-auto w-12 h-12 relative group bg-gray-700 text-gray-300 rounded p-2">
                     {/* <img
@@ -78,7 +80,7 @@ function About() {
                       className="w-6 h-6"
                     /> */}
                     <img
-                      src={`technologies icons/${technology.toLowerCase()}.svg`}
+                      src={`technologies icons/${technology_file.toLowerCase()}.svg`}
                       alt={technology}
                       className="w-full h-full"
                     />

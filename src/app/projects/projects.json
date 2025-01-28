@@ -12,7 +12,7 @@
         "description": "A personal website to showcase all my projects and skills. It helps people learn more about my work and experience.",
         "technologies": ["NextJS", "React", "Tailwind", "Typescript", "ShadcnUI"],
         "imageLink": "/Projects images/Portfolio.png",
-        "sourceCodeLink": "https://github.com/Karim-Zaf/Tic-Tac-Toe?tab=readme-ov-file",
+        "sourceCodeLink": "https://github.com/Karim-Zaf/Portfolio",
         "webSiteLink": "http://karim-zaafrani.vercel.app/"
     },
     {

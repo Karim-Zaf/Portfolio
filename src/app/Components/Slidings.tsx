@@ -13,8 +13,8 @@ function Slidings({paths}:any) {
                 </CarouselItem>
             })}
             </CarouselContent>
-            <CarouselPrevious className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full" />
-            <CarouselNext className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full" />
+            <CarouselPrevious className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full" />
+            <CarouselNext className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 hover:bg-gray-200 rounded-full" />
         </Carousel>  
     </>
   );

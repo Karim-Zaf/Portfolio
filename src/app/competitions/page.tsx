@@ -6,14 +6,23 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
 import { Card, CardContent, CardTitle } from '@/components/ui/card';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import Slidings from '../Components/Slidings';
 
 export default function CompetitionsPage() {
   const slides_ACPC = Array.from({ length: 28 }, (_, i) => i + 1);
   const slides_TCPC = Array.from({ length: 7 }, (_, i) => i + 1);
   const slides_instructor = Array.from({ length: 4 }, (_, i) => i + 1);
   const fichiers = [
-    "ACPC_28.jpg",
+    
     "1706869629285.jpeg",
+    "ACPC_28.jpg",
     "1709832494079.jpeg",
     "1709832477599.jpeg",
     "1706869620538.jpeg",
@@ -33,19 +42,10 @@ export default function CompetitionsPage() {
         <span>Diga Diga</span>
       </h2>
 
-      <Swiper
-        pagination={{ type: 'fraction' }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        autoplay={{ delay: 1000, disableOnInteraction: false }}
-        className="mb-8 lg:w-[900px] w-[600px] lg:h-[500px] h-[300px]"
-      >
-        {fichiers.map((image_) => (
-          <SwiperSlide key={image_}>
-            <img src={`Competitions/${image_}`} alt={`Slide ${image_}`} className='md:w-[900px] w-[90%] md:h-[500px] h-[300px] object-cover rounded-3xl' />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+    <Slidings paths={fichiers.map((_image)=>{
+        return `Competitions/${_image}`;
+    })}></Slidings>
+    
 
       <Card className='lg:w-[1000px] w-[90%] mb-8 shadow-lg bg-neutral-800 text-white'>
         <CardTitle className='p-6 flex gap-7 bg-neutral-700 rounded-t-xl'>
@@ -63,36 +63,19 @@ export default function CompetitionsPage() {
       <h2 className=" relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8 border-b-4 pb-2 mb-8">
         <span>ACPC 2024</span>
       </h2>
-      <Swiper
-        pagination={{ type: 'fraction' }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mb-8 lg:w-[900px] w-[600px] lg:h-[500px] h-[300px]"
-        autoplay={{ delay: 1000, disableOnInteraction: false }}
-      >
-        {slides_ACPC.map((i) => (
-          <SwiperSlide key={i}>
-            <img src={`Competitions/ACPC 2024/ACPC_${i}.jpg`} alt={`Slide ${i}`} className='md:w-[900px] w-[90%] md:h-[500px] h-[300px] object-cover rounded-3xl' />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      
+      <Slidings paths={slides_ACPC.map((i)=>{
+        return `Competitions/ACPC 2024/ACPC_${i}.jpg`;
+      })}></Slidings>
+    
           
       <h2 className=" relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8 border-b-4 pb-2 mb-8">
         <span>TCPC 2024</span>
       </h2>
-      <Swiper
-        pagination={{ type: 'fraction' }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mb-8 lg:w-[900px] w-[550px] lg:h-[500px] h-[300px]"
-        autoplay={{ delay: 1000, disableOnInteraction: false }}
-      >
-        {slides_TCPC.map((i) => (
-          <SwiperSlide key={i}>
-            <img src={`Competitions/TCPC 2024/TCPC_${i}.jpg`} alt={`Slide ${i}`} className='md:w-[900px] w-[90%] md:h-[500px] h-[300px] object-cover rounded-3xl' />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+
+      <Slidings paths={slides_TCPC.map((i)=>{
+        return `Competitions/TCPC 2024/TCPC_${i}.jpg`;
+      })}></Slidings>
 
       <h2 className=" relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8 border-b-4 pb-2 mb-8">
         <span>My passion for Competitive Programming</span>
@@ -125,22 +108,9 @@ export default function CompetitionsPage() {
         </CardContent>
       </Card>
 
-
-
-      <Swiper
-        pagination={{ type: 'fraction' }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-
-        className="mb-8 lg:w-[900px] w-[600px] lg:h-[500px] h-[300px]"
-        autoplay={{ delay: 1000, disableOnInteraction: false }}
-      >
-        {slides_instructor.map((i) => (
-          <SwiperSlide key={i}>
-            <img src={`Instructor/Instructor_${i}.png`} alt={`Slide ${i}`} className='md:w-[900px] w-[90%] md:h-[500px] h-[300px] object-cover rounded-3xl' />
-          </SwiperSlide>
-        ))}
-      </Swiper>   
+      <Slidings paths={slides_instructor.map((i)=>{
+        return `Instructor/Instructor_${i}.png`;
+      })}></Slidings>   
 
     </div>    
   );

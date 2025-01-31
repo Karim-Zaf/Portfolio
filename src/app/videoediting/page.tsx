@@ -7,7 +7,7 @@ export default function page() {
  
   return (
     <div className='w-full flex flex-col items-center py-8 min-h-screen '>
-      <h2 className="md:mt-24 mt-16 mb-12 relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8 border-b-4 pb-2">
+      <h2 className="md:mt-24 mt-16 md:mb-12 mb-6 relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8 border-b-4 pb-2">
         <span>Video Editing</span>
       </h2>
 

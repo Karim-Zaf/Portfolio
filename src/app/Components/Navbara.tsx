@@ -7,12 +7,12 @@ import { useRouter, usePathname } from 'next/navigation';
 
 function Navbara() {
   const [isOpen, setIsOpen] = useState(false);
-  const options = ['home', 'about', 'projects', 'certificates', 'competitions','contact'];
+  const options = ['home', 'about', 'projects', 'certificates', 'competitions','Video Editing','contact'];
   const router = useRouter();
   const pathname = usePathname(); // Récupère le chemin actuel (ex: "/contact")
 
   const navigateTo = (option: string) => {
-    const route = `/${option==="home"? "":option}`;
+    const route = `/${option==="home"? "":option.toLowerCase().replace(/\s+/g, '')}`;
     router.push(route); // Redirige vers la route
     setIsOpen(false); // Ferme le menu mobile (si ouvert)
   };

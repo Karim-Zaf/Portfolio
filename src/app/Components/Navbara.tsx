@@ -10,7 +10,7 @@ function Navbara() {
   const options = ['home', 'about', 'projects', 'certificates', 'competitions','Video Editing','contact'];
   const router = useRouter();
   const pathname = usePathname(); // Récupère le chemin actuel (ex: "/contact")
-
+  
   const navigateTo = (option: string) => {
     const route = `/${option==="home"? "":option.toLowerCase().replace(/\s+/g, '')}`;
     router.push(route); // Redirige vers la route
@@ -29,7 +29,7 @@ function Navbara() {
             key={option}
             className={cn(
               "font-bold hover:text-indigo-400 transition duration-300 capitalize bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white",
-             ( pathname === `/${option}` || pathname ==='/' && option === "home") &&
+             ( pathname === `/${option.toLowerCase().replace(/\s+/g, '')}` || pathname ==='/' && option === "home") &&
                 "border-b-2 border-b-indigo-800 bg-clip-text text-transparent bg-gradient-to-b from-indigo-800 via-indigo-200 to-white"
             )}
           >

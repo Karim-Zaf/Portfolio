@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import React from 'react';
 import certificates from './cerficates.json'
+import Certificate from './Certificate';
 function Certificates() {
   
   return (
@@ -12,11 +13,21 @@ function Certificates() {
       <div className='mt-8 w-full text-xl text-white h-1 bg-gradient-to-r mb-16 text-center'>
         Here you will find a list of my certificates
       </div>
+      {/* <div>
+        {
+          certificates.map(({ title, skills, ImageLink, Provider ,WebSiteLink }) => {
+            return <>
+              <Certificate title={title} skills ={skills} ImageLink={ImageLink} Provider = {Provider} WebSiteLink={WebSiteLink} />
+              
+            </>
+        })
+      }
+      </div> */}
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
-        {certificates.map(({ title, skills, ImageLink, WebSiteLink }) => (
+        {certificates.map(({ title, skills, ImageLink, Provider,WebSiteLink }) => (
           <Card key={title} className='sm:w-[420px] w-[90%] m-auto shadow-lg bg-neutral-800'>
             <CardContent className='p-6 flex flex-col justify-center items-center gap-7'>
-              <img src={ImageLink} alt={title} className='w-96 h-auto mb-4 rounded' />
+              <img src={`Certificates/${ImageLink}`} alt={title} className='w-96 h-auto mb-4 rounded' />
               <div>
                 <h1 className='text-2xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white'>
                   {title}

@@ -13,7 +13,7 @@ function Certificates() {
       <div className='mt-8 w-full text-xl text-white h-1 bg-gradient-to-r mb-16 text-center'>
         Here you will find a list of my certificates
       </div>
-      {/* <div>
+      {/* <div className='flex flex-col'>
         {
           certificates.map(({ title, skills, ImageLink, Provider ,WebSiteLink }) => {
             return <>

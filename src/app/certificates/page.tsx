@@ -3,6 +3,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import React from 'react';
 import certificates from './cerficates.json'
 import Certificate from './Certificate';
+import { Accordion } from '@radix-ui/react-accordion';
 function Certificates() {
   
   return (
@@ -17,8 +18,9 @@ function Certificates() {
         {
           certificates.map(({ title, skills, ImageLink, Provider ,WebSiteLink }) => {
             return <>
-              <Certificate title={title} skills ={skills} ImageLink={ImageLink} Provider = {Provider} WebSiteLink={WebSiteLink} />
-              
+              <Accordion type="single" collapsible className="w-full">
+                <Certificate title={title} skills ={skills} ImageLink={ImageLink} Provider = {Provider} WebSiteLink={WebSiteLink} />
+              </Accordion>
             </>
         })
       }

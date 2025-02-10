@@ -3,63 +3,63 @@
         "title": "Machine Learning Specialisation",
         "skills": ["Machine Learning", "Specialisation"],
         "ImageLink": "Certificates images/Machine Learning Specialisation by Standford University & Deeplearning.ai & Coursera.png",
-        "Provider": "Coursera",
+        "Provider": "Stanford",
         "WebSiteLink": "https://www.google.com"
     },
     {
         "title": "Advanced Learning Algorithms",
         "skills": ["Machine Learning", "Algorithms"],
         "ImageLink": "Certificates images/Advanced Learning Algorithms by Standford & DeepLearning.ai & Coursera.png",
-        "Provider": "Coursera",
+        "Provider": "Stanford",
         "WebSiteLink": "https://www.google.com"
     },
     {
         "title": "Supervised Machine Learning: Regression and Classification",
         "skills": ["Supervised Learning", "Classification"],
         "ImageLink": "Certificates images/Supervised Machine Learning: Regression and classification by Standford University & Deeplearning.ai & Coursera.png",
-        "Provider": "Coursera",
+        "Provider": "Stanford",
         "WebSiteLink": "https://www.google.com"
     },
     {
         "title": "Unsupervised Learning",
         "skills": ["Machine Learning", "Unsupervised Learning"],
         "ImageLink": "Certificates images/Unsupervised Leraning by Standford University & Deeplearning.ai & Coursera.png",
-        "Provider": "Coursera",
+        "Provider": "Stanford",
         "WebSiteLink": "https://www.google.com"
     },
     {
         "title": "Intermediate Machine Learning",
         "skills": ["Machine Learning", "Intermediate"],
         "ImageLink": "Certificates images/Intermediate Machine Learning by KAGGLE.png",
-        "Provider": "Coursera",
+        "Provider": "Kaggle",
         "WebSiteLink": "https://www.google.com"
     },
     {
         "title": "AI-Driven Cybersecurity: The Rise of Intelligent Threats",
         "skills": ["Cybersecurity", "AI"],
         "ImageLink": "Certificates images/AI-Driven Cybersecurity: The Rise of Intelligent Threats.png",
-        "Provider": "Coursera",
+        "Provider": "ey",
         "WebSiteLink": "https://www.google.com"
     },
     {
         "title": "Cybersecurity in Cloud Computing",
         "skills": ["Cybersecurity", "Cloud Computing"],
         "ImageLink": "Certificates images/Cybersecurity in Cloud Computing by Securinets.png",
-        "Provider": "Coursera",
+        "Provider": "HackTheBox",
         "WebSiteLink": "https://www.google.com"
     },
     {
         "title": "React by HackerRank",
         "skills": ["React", "Web Development"],
         "ImageLink": "Certificates images/React by HackerRank.png",
-        "Provider": "Coursera",
+        "Provider": "HackerRank",
         "WebSiteLink": "https://www.google.com"
     },
     {
         "title": "Foundational C#",
         "skills": ["C#", "Programming"],
         "ImageLink": "Certificates images/Foundational C sharp with Mircrosoft & FreeCodeCamp.png",
-        "Provider": "Coursera",
+        "Provider": "Microsoft",
         "WebSiteLink": "https://www.google.com"
     },
     {
@@ -73,49 +73,49 @@
         "title": "Java by HackerRank",
         "skills": ["Java", "Programming"],
         "ImageLink": "Certificates images/Java by HackerRank.png",
-        "Provider": "Coursera",
+        "Provider": "HackerRank",
         "WebSiteLink": "https://www.google.com"
     },
     {
         "title": "JavaScript by HackerRank",
         "skills": ["JavaScript", "Web Development"],
         "ImageLink": "Certificates images/JavaScript by HackerRank.png",
-        "Provider": "Coursera",
+        "Provider": "HackerRank",
         "WebSiteLink": "https://www.google.com"
     },
     {
         "title": "Python by HackerRank",
         "skills": ["Python", "Programming"],
         "ImageLink": "Certificates images/Python by HackerRank.png",
-        "Provider": "Coursera",
+        "Provider": "HackerRank",
         "WebSiteLink": "https://www.google.com"
     },
     {
         "title": "Problem Solving by HackerRank",
         "skills": ["Problem Solving", "Programming"],
         "ImageLink": "Certificates images/Problem Solving by HackerRank.png",
-        "Provider": "Coursera",
+        "Provider": "HackerRank",
         "WebSiteLink": "https://www.google.com"
     },
     {
         "title": "ACPC 2024",
         "skills": ["Competitive Programming"],
         "ImageLink": "Certificates images/ACPC 2024.png",
-        "Provider": "Coursera",
+        "Provider": "ICPC",
         "WebSiteLink": "https://www.google.com"
     },
     {
         "title": "TCPC 2024",
         "skills": ["Competitive Programming"],
         "ImageLink": "Certificates images/TCPC 2024.png",
-        "Provider": "Coursera",
+        "Provider": "ICPC",
         "WebSiteLink": "https://www.google.com"
     },
     {
         "title": "TCPC 2023",
         "skills": ["Competitive Programming"],
         "ImageLink": "Certificates images/TCPC 2023.png",
-        "Provider": "Coursera",
+        "Provider": "ICPC",
         "WebSiteLink": "https://www.google.com"
     },
     {
@@ -136,14 +136,14 @@
         "title": "Meta Hacker Cup 2024",
         "skills": ["Competitive Programming"],
         "ImageLink": "Certificates images/Meta Hacker CUP 2024.png",
-        "Provider": "Coursera",
+        "Provider": "Meta",
         "WebSiteLink": "https://www.google.com"
     },
     {
         "title": "Meta Hacker Cup 2023",
         "skills": ["Competitive Programming"],
         "ImageLink": "Certificates images/Meta Hacker CUP 2023.png",
-        "Provider": "Coursera",
+        "Provider": "Meta",
         "WebSiteLink": "https://www.google.com"
     },
     {
@@ -185,14 +185,14 @@
         "title": "DELF B2",
         "skills": ["French", "Language Proficiency"],
         "ImageLink": "Certificates images/DELF B2.png",
-        "Provider": "Coursera",
+        "Provider": "France",
         "WebSiteLink": "https://www.google.com"
     },
     {
         "title": "DELF B2 2.0",
         "skills": ["French", "Language Proficiency"],
         "ImageLink": "Certificates images/DELF B2 2.0.png",
-        "Provider": "Coursera",
+        "Provider": "France",
         "WebSiteLink": "https://www.google.com"
     }
 ]

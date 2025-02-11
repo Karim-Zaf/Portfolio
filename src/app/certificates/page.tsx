@@ -31,8 +31,8 @@ function Certificates() {
         {
             certificates.map(({ title, skills, ImageLink, Provider ,WebSiteLink }) => {
               return (
-              <AccordionItem className='md:w-[700px] w-[90%] m-auto pt-0 bg-neutral-800  mb-4  rounded-xl border-neutral-400 border-2 pr-3' value={`item-${++cnt}`}>
-                <AccordionTrigger className='w-full flex  h-full rounded-t-xl p-2'>
+              <AccordionItem className='md:w-[700px] w-[90%] m-auto pt-0 bg-neutral-800  mb-4  rounded-xl border-neutral-400 border-2 ' value={`item-${++cnt}`}>
+                <AccordionTrigger className='w-full flex  h-full rounded-t-xl p-2 pr-4' >
                   
                     <img
                       src={`Certificates/Providers/${Provider.toLowerCase()}.svg`}

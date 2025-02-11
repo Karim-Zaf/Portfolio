@@ -66,7 +66,7 @@
         "title": "Getting Started with Git and GitHub",
         "skills": ["Git", "GitHub"],
         "ImageLink": "Certificates images/Getting Started with Git and Github by IBM & Coursera.png",
-        "Provider": "Coursera",
+        "Provider": "IBM",
         "WebSiteLink": "https://www.google.com"
     },
     {
@@ -122,14 +122,14 @@
         "title": "Geeks Hack 3.0 CP Hackathon",
         "skills": ["Hackathon", "Competitive Programming"],
         "ImageLink": "Certificates images/Geeks Hack  3.0 CP Hackaton.png",
-        "Provider": "Coursera",
+        "Provider": "geeksensit",
         "WebSiteLink": "https://www.google.com"
     },
     {
         "title": "ISI Local Contest",
         "skills": ["Competitive Programming", "Algorithm"],
         "ImageLink": "Certificates images/ISI Local Contest by Freeways.png",
-        "Provider": "Coursera",
+        "Provider": "Freeways",
         "WebSiteLink": "https://www.google.com"
     },
     {
@@ -150,35 +150,35 @@
         "title": "SolveIT CP Competition",
         "skills": ["Competitive Programming"],
         "ImageLink": "Certificates images/SolveIT Cp Compeition by ACM Esprit.png",
-        "Provider": "Coursera",
+        "Provider": "acm",
         "WebSiteLink": "https://www.google.com"
     },
     {
         "title": "Winter Cup 6.0",
         "skills": ["Competitive Programming"],
         "ImageLink": "Certificates images/Winter CUP CP competition by ACM INSAT 6.0 .png",
-        "Provider": "Coursera",
+        "Provider": "acm",
         "WebSiteLink": "https://www.google.com"
     },
     {
         "title": "Winter Cup 5.0",
         "skills": ["Competitive Programming"],
         "ImageLink": "Certificates images/Winter CUP CP competition by ACM INSAT 5.0 .png",
-        "Provider": "Coursera",
+        "Provider": "acm",
         "WebSiteLink": "https://www.google.com"
     },
     {
         "title": "Marketing Vice President at Tunivision",
         "skills": ["Marketing", "Leadership"],
         "ImageLink": "Certificates images/Marketing Vice President at Tunivision Certificate.png",
-        "Provider": "Coursera",
+        "Provider": "Tunivisions",
         "WebSiteLink": "https://www.google.com"
     },
     {
-        "title": "Membership Certificate",
+        "title": "General secretary in charge of Marketing at TIMUN",
         "skills": ["Leadership", "Organization"],
-        "ImageLink": "Certificates images/Membershiphh certificate TIMUN Ezzahra.png",
-        "Provider": "Coursera",
+        "ImageLink": "Certificates images/General secretary in charge of Marketing Certificate.png",
+        "Provider": "un",
         "WebSiteLink": "https://www.google.com"
     },
     {

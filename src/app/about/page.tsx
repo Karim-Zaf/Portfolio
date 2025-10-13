@@ -17,14 +17,13 @@ function About() {
           WHO AM I?
         </CardTitle>
         <CardContent className='p-6 flex gap-7 text-lg leading-relaxed'>
-          I am a passionate and driven <strong>Computer Science engineering student</strong> currently pursuing my degree at the 
-          <strong> Université de Technologie de Compiègne (UTC)</strong> 🇫🇷. 
-          <br /><br />
-          As an <strong>Apprentice at Cegedim</strong>, I work on <strong>DevSecOps</strong> and <strong>Cloud Security</strong> projects, where I contribute to improving automation, reliability, and security within cloud infrastructures. 
-          <br /><br />
-          My interests span <strong>Competitive Programming</strong>, <strong>Machine Learning</strong>, <strong>Web Development</strong>, and <strong>DevOps</strong> — areas where I love exploring how different technologies can come together to solve real-world problems.
-          <br /><br />
-          I believe that <strong>perseverance, curiosity, and continuous learning</strong> are the keys to excellence. My long-term goal is to <strong>build meaningful, impactful projects</strong> that combine innovation and technical depth.
+I am a passionate and driven Computer Science engineering student currently pursuing my degree at the Université de Technologie de Compiègne (UTC) 🇫🇷.
+
+As an Apprentice at Cegedim, I work on DevSecOps and cloud security projects, where I contribute to enhancing system reliability and automation while deepening my understanding of secure software practices.
+
+My interests span Competitive Programming, Machine Learning, Web Development, and DevOps, reflecting my curiosity and desire to explore every layer of technology — from algorithms to large-scale systems.
+
+I strongly believe that perseverance, curiosity, and continuous learning are the foundations of excellence. My ultimate goal is to build meaningful and impactful projects that combine technical innovation with real-world value.
         </CardContent>
       </Card>
 

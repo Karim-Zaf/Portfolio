@@ -7,75 +7,159 @@ import { useRouter, usePathname } from 'next/navigation';
 
 function Navbara() {
   const [isOpen, setIsOpen] = useState(false);
-  const options = ['home', 'about', 'projects', 'certificates', 'competitions','Video Editing','contact'];
+  const [scrollY, setScrollY] = useState(0);
+  
+  const options = [
+    { name: 'Accueil', key: 'home', icon: '🏠' },
+    { name: 'À propos', key: 'about', icon: '👤' },
+    { name: 'Projets', key: 'projects', icon: '💻' },
+    { name: 'Certificats', key: 'certificates', icon: '🏆' },
+    { name: 'Compétitions', key: 'competitions', icon: '🎯' },
+    { name: 'Montage Vidéo', key: 'videoediting', icon: '🎬' },
+    { name: 'Contact', key: 'contact', icon: '📧' }
+  ];
+  
   const router = useRouter();
-  const pathname = usePathname(); // Récupère le chemin actuel (ex: "/contact")
+  const pathname = usePathname();
+  
+  // Effet de scroll pour la navbar
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   
   const navigateTo = (option: string) => {
-    const route = `/${option==="home"? "":option.toLowerCase().replace(/\s+/g, '')}`;
-    router.push(route); // Redirige vers la route
-    setIsOpen(false); // Ferme le menu mobile (si ouvert)
+    const route = `/${option === "home" ? "" : option.toLowerCase().replace(/\s+/g, '')}`;
+    router.push(route);
+    setIsOpen(false);
+  };
+
+  const isActive = (optionKey: string) => {
+    return pathname === `/${optionKey.toLowerCase().replace(/\s+/g, '')}` || 
+           (pathname === '/' && optionKey === "home");
   };
 
   return (
-    <div className="h-16 fixed right-0 top-0 w-screen shadow-md flex justify-between items-center px-8 border-b-2 border-b-slate-300 z-50 mb-24 bg-stone-950">
-      <div className="text-2xl font-bold">
-        <Logo />
-      </div>
-      <div className="hidden md:flex space-x-8">
-        {options.map((option) => (
-          <Button
-            onClick={() => navigateTo(option)}
-            key={option}
-            className={cn(
-              "font-bold hover:text-indigo-400 transition duration-300 capitalize bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white",
-             ( pathname === `/${option.toLowerCase().replace(/\s+/g, '')}` || pathname ==='/' && option === "home") &&
-                "border-b-2 border-b-indigo-800 bg-clip-text text-transparent bg-gradient-to-b from-indigo-800 via-indigo-200 to-white"
-            )}
-          >
-            {option}
-          </Button>
-        ))}
-      </div>
-      <div className="md:hidden">
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="text-white focus:outline-none"
-        >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}
-            />
-          </svg>
-        </button>
-      </div>
-      {isOpen && (
-        <div className="md:hidden absolute top-16 right-0 w-full bg-stone-950 shadow-md flex flex-col items-center space-y-4 py-4">
-          {options.map((option) => (
-            <Button
-              onClick={() => navigateTo(option)}
-              key={option}
-              className={cn(
-                "font-bold hover:text-indigo-400 transition duration-300 capitalize bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white",
-                ( pathname === `/${option}` || pathname ==='/' && option === "home") &&
-                  "border-b-2 border-b-indigo-800 bg-clip-text text-transparent bg-gradient-to-b from-indigo-800 via-indigo-200 to-white"
-              )}
-            >
-              {option}
-            </Button>
-          ))}
+    <>
+      {/* Navbar principale */}
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrollY > 50 
+          ? 'glass border-b border-white/10 shadow-2xl' 
+          : 'bg-transparent'
+      }`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            {/* Logo */}
+            <div className="flex items-center space-x-3 fade-in">
+              <Logo />
+            </div>
+
+            {/* Navigation desktop */}
+            <div className="hidden lg:flex items-center space-x-1">
+              {options.map((option, index) => (
+                <button
+                  key={option.key}
+                  onClick={() => navigateTo(option.key)}
+                  className={cn(
+                    "relative px-4 py-2 rounded-xl font-medium transition-all duration-300 group hover-lift",
+                    "text-sm lg:text-base",
+                    isActive(option.key)
+                      ? "text-gradient-primary bg-white/10"
+                      : "text-gray-300 hover:text-white hover:bg-white/5"
+                  )}
+                  style={{animationDelay: `${index * 0.1}s`}}
+                >
+                  <span className="relative z-10 flex items-center gap-2">
+                    <span className="text-lg">{option.icon}</span>
+                    {option.name}
+                  </span>
+                  
+                  {/* Effet de background au hover */}
+                  <div className={cn(
+                    "absolute inset-0 rounded-xl transition-all duration-300",
+                    "bg-gradient-to-r from-blue-500/20 to-purple-600/20",
+                    "opacity-0 group-hover:opacity-100",
+                    isActive(option.key) && "opacity-100"
+                  )}></div>
+                  
+                  {/* Indicateur actif */}
+                  {isActive(option.key) && (
+                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/2 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"></div>
+                  )}
+                </button>
+              ))}
+            </div>
+
+            {/* Menu hamburger mobile */}
+            <div className="lg:hidden">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="relative w-10 h-10 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center transition-all duration-300 hover:bg-white/20 group"
+              >
+                <div className="flex flex-col items-center justify-center w-5 h-5">
+                  <span className={cn(
+                    "block w-5 h-0.5 bg-white rounded transition-all duration-300",
+                    isOpen ? "rotate-45 translate-y-1" : "-translate-y-1"
+                  )}></span>
+                  <span className={cn(
+                    "block w-5 h-0.5 bg-white rounded transition-all duration-300",
+                    isOpen ? "opacity-0" : "opacity-100"
+                  )}></span>
+                  <span className={cn(
+                    "block w-5 h-0.5 bg-white rounded transition-all duration-300",
+                    isOpen ? "-rotate-45 -translate-y-1" : "translate-y-1"
+                  )}></span>
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
-      )}
-    </div>
+
+        {/* Menu mobile */}
+        <div className={cn(
+          "lg:hidden absolute top-full left-0 right-0 transition-all duration-300 overflow-hidden",
+          isOpen 
+            ? "max-h-screen opacity-100" 
+            : "max-h-0 opacity-0"
+        )}>
+          <div className="glass border-t border-white/10 backdrop-blur-xl">
+            <div className="max-w-7xl mx-auto px-4 py-6">
+              <div className="grid grid-cols-1 gap-2">
+                {options.map((option, index) => (
+                  <button
+                    key={option.key}
+                    onClick={() => navigateTo(option.key)}
+                    className={cn(
+                      "flex items-center gap-4 px-4 py-3 rounded-xl font-medium transition-all duration-300 text-left group",
+                      "stagger-item",
+                      isActive(option.key)
+                        ? "text-gradient-primary bg-white/15 border border-blue-500/30"
+                        : "text-gray-300 hover:text-white hover:bg-white/10"
+                    )}
+                    style={{animationDelay: `${index * 0.05}s`}}
+                  >
+                    <span className="text-2xl">{option.icon}</span>
+                    <span className="text-lg">{option.name}</span>
+                    
+                    {/* Flèche indicative */}
+                    <div className={cn(
+                      "ml-auto transition-transform duration-300",
+                      "group-hover:translate-x-1"
+                    )}>
+                      →
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      {/* Spacer pour éviter que le contenu soit caché sous la navbar */}
+      <div className="h-16"></div>
+    </>
   );
 }
 

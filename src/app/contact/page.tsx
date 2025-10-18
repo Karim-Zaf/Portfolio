@@ -1,31 +1,30 @@
+"use client";
 import React from 'react';
+import { useLanguage } from '../Components/LanguageContext';
 import { Card, CardContent } from '@/components/ui/card';
 
 function ContactPage() {
+  const { t } = useLanguage();
   return (
     <div className='w-full flex flex-col items-center section-padding min-h-screen'>
       {/* Titre principal avec animation */}
       <h2 className="md:mt-20 mt-14 relative z-10 text-3xl md:text-5xl lg:text-6xl font-bold text-center tracking-tight slide-up title-with-particles">
-        <span className="text-gradient-primary">Contact</span>
+        <span className="text-gradient-primary">{t('contact_title')}</span>
         <div className="mt-4 w-32 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full mx-auto"></div>
       </h2>
       
       {/* Sous-titre */}
       <div className='mt-6 text-xl md:text-2xl text-gray-400 mb-14 text-center max-w-3xl fade-in' style={{animationDelay: '0.2s'}}>
-        Feel free to contact me! I’d be happy to talk 💬
+        {t('contact_subtitle')}
       </div>
 
       <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Informations de contact */}
         <div className="space-y-8 slide-up" style={{animationDelay: '0.4s'}}>
           <div className="card-modern p-8 hover-lift">
-            <h3 className="text-2xl md:text-3xl font-bold text-gradient-accent mb-6">
-              Let’s keep in touch!
-            </h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-gradient-accent mb-6">{t('contact_keep_in_touch')}</h3>
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
-              I’m always open to new opportunities, collaborations and interesting discussions.
-              Whether you want to talk about a project, an apprenticeship opportunity, or simply chat about tech,
-              I’d be glad to respond!
+              {t('contact_intro_text')}
             </p>
 
             {/* Moyens de contact */}
@@ -35,7 +34,7 @@ function ContactPage() {
                   <img src="/mail.svg" alt="Email" className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-white">Email</h4>
+                  <h4 className="font-semibold text-white">{t('contact_email_label_short')}</h4>
                   <a href="mailto:kzaafrani@gmail.com" className="text-gray-300 hover:text-white underline-offset-4 hover:underline">
                     kzaafrani@gmail.com
                   </a>
@@ -47,7 +46,7 @@ function ContactPage() {
                   <img src="/SocialMedia/LinkedIn.png" alt="LinkedIn" className="w-6 h-6 object-contain" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-white">LinkedIn</h4>
+                  <h4 className="font-semibold text-white">{t('contact_linkedin_label_short')}</h4>
                   <p className="text-gray-400">Karim Zaafrani</p>
                 </div>
               </div>
@@ -57,7 +56,7 @@ function ContactPage() {
                   <img src="/SocialMedia/github.png" alt="GitHub" className="w-6 h-6 object-contain" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-white">GitHub</h4>
+                  <h4 className="font-semibold text-white">{t('contact_github_label_short')}</h4>
                   <p className="text-gray-400">@Karim-Zaf</p>
                 </div>
               </div>
@@ -68,8 +67,8 @@ function ContactPage() {
               <div className="flex items-center gap-3">
                 <span className="text-2xl">⚡</span>
                 <div>
-                  <h4 className="font-semibold text-white">Response time</h4>
-                  <p className="text-gray-300">Usually within 24 hours</p>
+                  <h4 className="font-semibold text-white">{t('contact_response_time_title')}</h4>
+                  <p className="text-gray-300">{t('contact_response_time_value')}</p>
                 </div>
               </div>
             </div>
@@ -83,9 +82,7 @@ function ContactPage() {
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
                 <span className="text-xl">✉️</span>
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gradient-primary">
-                Send me a message
-              </h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gradient-primary">{t('contact_send_message')}</h3>
             </div>
 
             <form action="https://api.web3forms.com/submit" method="POST" className='space-y-6'>
@@ -93,7 +90,7 @@ function ContactPage() {
               
               <div className="stagger-item">
                 <label htmlFor='name' className='block text-gray-300 mb-3 font-medium'>
-                  Full name *
+                  {t('contact_full_name_label')}
                 </label>
                 <input
                   type='text'
@@ -101,13 +98,13 @@ function ContactPage() {
                   name='name'
                   required
                   className='w-full px-4 py-3 bg-white/5 border border-white/10 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-white/20'
-                  placeholder='Your full name'
+                  placeholder={t('contact_full_name_placeholder')}
                 />
               </div>
 
               <div className="stagger-item">
                 <label htmlFor='email' className='block text-gray-300 mb-3 font-medium'>
-                  Email address *
+                  {t('contact_email_label')}
                 </label>
                 <input
                   type='email'
@@ -115,26 +112,26 @@ function ContactPage() {
                   name='email'
                   required
                   className='w-full px-4 py-3 bg-white/5 border border-white/10 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-white/20'
-                  placeholder='your@email.com'
+                  placeholder={t('contact_email_placeholder')}
                 />
               </div>
 
               <div className="stagger-item">
                 <label htmlFor='subject' className='block text-gray-300 mb-3 font-medium'>
-                  Subject
+                  {t('contact_subject_label')}
                 </label>
                 <input
                   type='text'
                   id='subject'
                   name='subject'
                   className='w-full px-4 py-3 bg-white/5 border border-white/10 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-white/20'
-                  placeholder='Subject of your message'
+                  placeholder={t('contact_subject_placeholder')}
                 />
               </div>
 
               <div className="stagger-item">
                 <label htmlFor='message' className='block text-gray-300 mb-3 font-medium'>
-                  Message *
+                  {t('contact_message_label')}
                 </label>
                 <textarea
                   id='message'
@@ -142,27 +139,21 @@ function ContactPage() {
                   name='message'
                   required
                   className='w-full px-4 py-3 bg-white/5 border border-white/10 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-white/20 resize-none'
-                  placeholder='Describe your project, your questions, or what you’d like to discuss...'
+                  placeholder={t('contact_message_placeholder')}
                 ></textarea>
               </div>
 
               <button
                 type='submit'
-                className='w-full btn-modern py-4 text-lg font-bold hover-lift group relative overflow-hidden'
+                className='w-full btn-primary py-4 text-lg font-bold hover-lift group relative overflow-hidden'
               >
                 <span className="relative z-10 flex items-center justify-center gap-3">
                   <span className="group-hover:rotate-12 transition-transform duration-300">📤</span>
-                  Send message
+                  {t('contact_send_message')}
                 </span>
               </button>
             </form>
 
-            {/* Note de confidentialité */}
-            <div className="mt-6 p-4 rounded-xl bg-gray-800/50 border border-gray-700">
-              <p className="text-sm text-gray-400 text-center">
-                🔒 Your information is safe and will never be shared with third parties.
-              </p>
-            </div>
           </div>
         </div>
       </div>
@@ -170,12 +161,8 @@ function ContactPage() {
       {/* Section réseaux sociaux */}
       <div className="mt-20 text-center slide-up" style={{animationDelay: '0.8s'}}>
         <div className="card-modern p-8 max-w-3xl mx-auto">
-          <h3 className="text-2xl md:text-3xl font-bold text-gradient-accent mb-4">
-            Follow me on socials
-          </h3>
-          <p className="text-gray-300 mb-8">
-            Stay tuned for my latest projects and updates!
-          </p>
+          <h3 className="text-2xl md:text-3xl font-bold text-gradient-accent mb-4">{t('contact_follow_me_title')}</h3>
+          <p className="text-gray-300 mb-8">{t('contact_follow_me_subtitle')}</p>
           <div className="flex justify-center gap-6">
             <a
               href="https://www.linkedin.com/in/karim-zaafrani-148868209/"

@@ -6,7 +6,7 @@ import projects from './projects.json'
 import { useLanguage } from '../Components/LanguageContext';
 
 function Projects() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage() as { t: (k: string) => string, lang: 'en' | 'fr' };
   return (
     <div className='w-full flex flex-col items-center section-padding min-h-screen'>
       {/* Titre principal avec animation */}
@@ -22,7 +22,7 @@ function Projects() {
 
       {/* Grid des projets (wide but low height) */}
       <div className="w-full max-w-7xl space-y-8">
-        {projects.map(({ title, description, technologies, imageLink, sourceCodeLink, webSiteLink }, index) => (
+        {projects.map(({ title, description, description_fr, technologies, imageLink, sourceCodeLink, webSiteLink }: any, index) => (
           <div 
             key={index} 
             className={`stagger-item ${index % 2 === 0 ? 'fade-in' : 'slide-up'}`}
@@ -55,13 +55,15 @@ function Projects() {
                       </h3>
                     </div>
                     
-                    <p className='text-gray-300 text-base md:text-lg leading-relaxed mb-3 line-clamp-3'>{description}</p>
+                    <p className='text-gray-300 text-base md:text-lg leading-relaxed mb-3 line-clamp-3'>
+                      {lang === 'fr' && description_fr ? description_fr : description}
+                    </p>
                     
                     {/* Technologies */}
                     <div className='mb-6'>
-                      <h4 className="text-xs md:text-sm font-semibold text-gray-400 mb-2 uppercase tracking-wider">Technologies</h4>
+                      <h4 className="text-xs md:text-sm font-semibold text-gray-400 mb-2 uppercase tracking-wider">{t('technologies_label')}</h4>
                       <div className='flex flex-wrap gap-2'>
-                        {technologies.map((technology, techIndex) => (
+                        {technologies.map((technology: string, techIndex: number) => (
                           <span 
                             key={technology} 
                             className='px-3 py-1.5 bg-gradient-to-r from-gray-700 to-gray-800 text-gray-300 rounded-full text-xs md:text-sm font-medium border border-gray-600 hover:border-blue-400/50 transition-all duration-300 hover-lift'
@@ -82,7 +84,7 @@ function Projects() {
                       rel="noopener noreferrer"
                       className="group relative"
                     >
-                      <div className='btn-modern flex items-center justify-center gap-2 min-w-[130px] bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-500 hover:to-gray-600'>
+                      <div className='btn-primary flex items-center justify-center gap-2 min-w-[130px]'>
                         <span>💻</span>
                         {t('cta_source_code')}
                       </div>
@@ -94,7 +96,7 @@ function Projects() {
                       rel="noopener noreferrer"
                       className="group relative"
                     >
-                      <div className='btn-modern flex items-center justify-center gap-2 min-w-[130px] bg-gradient-to-r from-green-500 to-green-600 hover:from-green-400 hover:to-green-500'>
+                      <div className='btn-primary flex items-center justify-center gap-2 min-w-[130px]'>
                         <span>🌐</span>
                         {t('cta_view_site')}
                       </div>
@@ -107,27 +109,27 @@ function Projects() {
         ))}
       </div>
 
-      {/* Section Call to Action (compact + EN) */}
+      {/* Section Call to Action (compact + localized) */}
       <div className="mt-14 text-center slide-up" style={{animationDelay: '1s'}}>
         <div className="card-modern p-6 max-w-3xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-bold text-gradient-accent mb-3">
             {t('cta_more_projects')}
           </h3>
           <p className="text-gray-300 mb-5 text-base md:text-lg">
-            I’m continuously building new, exciting products. Stay tuned to discover what’s next!
+            {t('projects_cta_paragraph')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="https://github.com/Karim-Zaf"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-modern inline-block hover-lift"
+              className="btn-primary inline-block hover-lift"
             >
               {t('cta_view_github')}
             </a>
             <a
               href="/contact"
-              className="btn-modern inline-block hover-lift bg-gradient-to-r from-purple-500 to-pink-500"
+              className="btn-primary inline-block hover-lift"
             >
               {t('cta_collaborate')}
             </a>

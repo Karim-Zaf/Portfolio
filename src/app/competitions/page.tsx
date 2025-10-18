@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import { useLanguage } from '../Components/LanguageContext';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -16,6 +17,7 @@ import {
 import Slidings from '../Components/Slidings';
 
 export default function CompetitionsPage() {
+  const { t } = useLanguage();
   const slides_ACPC = Array.from({ length: 28 }, (_, i) => i + 1);
   const slides_TCPC = Array.from({ length: 7 }, (_, i) => i + 1);
   const slides_instructor = Array.from({ length: 6 }, (_, i) => i + 1);
@@ -40,10 +42,10 @@ export default function CompetitionsPage() {
       {/* Hero section */}
       <section className="w-full max-w-6xl px-4 mt-24 text-center">
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight title-with-particles">
-          <span className="text-gradient-primary">Competitive Programming Journey</span>
+          <span className="text-gradient-primary">{t('competitions_hero_title')}</span>
         </h1>
         <p className="mt-4 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-          From early contests to national titles — a steady climb powered by persistence, teamwork, and love for problem solving.
+          {t('competitions_hero_subtitle')}
         </p>
         <div className="mt-8">
           <Slidings paths={fichiers.map((_image)=>`Competitions/${_image}`)} />
@@ -51,15 +53,15 @@ export default function CompetitionsPage() {
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div className="card-modern p-6">
             <div className="text-3xl font-bold text-gradient-primary">1000+ </div>
-            <div className="text-gray-400">Problems solved</div>
+            <div className="text-gray-400">{t('competitions_stats_problems_label')}</div>
           </div>
           <div className="card-modern p-6">
             <div className="text-3xl font-bold text-gradient-accent">Top 5% </div>
-            <div className="text-gray-400">Codeforces Candidate Master</div>
+            <div className="text-gray-400">{t('competitions_stats_codeforces_label')}</div>
           </div>
           <div className="card-modern p-6">
             <div className="text-3xl font-bold text-gradient-primary">3 Years</div>
-            <div className="text-gray-400">Active competing</div>
+            <div className="text-gray-400">{t('competitions_stats_years_label')}</div>
           </div>
         </div>
       </section>
@@ -67,25 +69,19 @@ export default function CompetitionsPage() {
       {/* Who are DIGA DIGA */}
       <Card className='lg:w-[1000px] w-[90%] mb-8 shadow-lg bg-neutral-800 text-white'>
         <CardTitle className='p-6 flex gap-7 bg-neutral-700 rounded-t-xl'>
-          Who are DIGA DIGA?
+          {t('who_are_diga_title')}
         </CardTitle>
         <CardContent className='p-6 flex flex-col gap-4'>
-          <p>
-            We are <strong>DIGA DIGA</strong>, a competitive programming team from the Higher Institute of Computer Science (ISI), part of Tunis El Manar University. Composed of Karim Zaafrani, Firas Briki, and Adem Ksouri, we thrive on solving challenging algorithmic problems and pushing our limits through competitions.
-          </p>
-          <p>
-            Driven by a love for coding and teamwork, we actively compete in prestigious events such as the Tunisian Collegiate Programming Contest (TCPC 2025), where we became <strong>Tunisian Champions</strong> and qualified for the Africa and Arab Collegiate Programming Championship (ACPC).
-          </p>
-          <p>
-            The name <strong>DIGA DIGA</strong> — meaning “slowly, slowly” in Tunisian dialect — reflects our philosophy: continuous, steady progress and the commitment to becoming a better version of ourselves with every challenge. Believe in yourself and in your dreams.
-          </p>
+          <p>{t('who_are_diga_p1')}</p>
+          <p>{t('who_are_diga_p2')}</p>
+          <p>{t('who_are_diga_p3')}</p>
         </CardContent>
       </Card>
 
 
 
       <h2 className="relative flex-col md:flex-row z-10 text-2xl md:text-4xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium flex items-center gap-2 md:gap-8 border-b-4 pb-2 mt-12 mb-8">
-        <span className="text-gradient-primary">TCPC 2025</span>
+        <span className="text-gradient-primary">{t('tcpc_2025_title')}</span>
       </h2>
 
       <div className="mb-12">
@@ -96,25 +92,21 @@ export default function CompetitionsPage() {
 
       <Card className='lg:w-[1000px] w-[90%] mb-12 shadow-lg bg-neutral-800 text-white'>
         <CardTitle className='p-6 flex gap-7 bg-neutral-700 rounded-t-xl'>
-          Tunisian Champion — TCPC 2025 🏆
+          {t('tcpc_2025_card_title')}
         </CardTitle>
         <CardContent className='p-6 flex flex-col gap-4'>
-          <p>
-            A dream comes true! Our team <strong>DIGA DIGA</strong> secured first place in the Tunisian Collegiate Programming Contest (TCPC 2025) and will represent Tunisia and the Higher Institute of Computer Science (ISI) at the ACPC — Africa and Arab Collegiate Programming Championship in Luxor, Egypt.
-          </p>
+          <p>{t('tcpc_2025_p1')}</p>
           <div className='space-y-1'>
-            <p>1st year — we didn’t qualify for ACPC</p>
-            <p>2nd year — we qualified as the last team</p>
-            <p>3rd year — Tunisian Champions</p>
+            <p>{t('tcpc_2025_progress_1')}</p>
+            <p>{t('tcpc_2025_progress_2')}</p>
+            <p>{t('tcpc_2025_progress_3')}</p>
           </div>
-          <p>
-            The name <strong>DIGA DIGA</strong>, meaning “slowly slowly” in Tunisian dialect, reflects our philosophy: continuous, steady progress and the commitment to becoming a better version of ourselves with every challenge. Believe in yourself and in your dreams.
-          </p>
+          <p>{t('tcpc_2025_p2')}</p>
         </CardContent>
       </Card>
 
       <h2 className="relative flex-col md:flex-row z-10 text-2xl md:text-4xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-semibold title-with-particles pb-2 mt-12 mb-8">
-        <span className="text-gradient-primary">ACPC 2024</span>
+        <span className="text-gradient-primary">{t('acpc_2024_title')}</span>
       </h2>
       
       <div className="mb-12">
@@ -125,7 +117,7 @@ export default function CompetitionsPage() {
    
          
       <h2 className="relative flex-col md:flex-row z-10 text-2xl md:text-4xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-semibold title-with-particles pb-2 mt-12 mb-8">
-        <span className="text-gradient-primary">TCPC 2024</span>
+        <span className="text-gradient-primary">{t('tcpc_2024_title')}</span>
       </h2>
 
       <div className="mb-12">
@@ -135,31 +127,31 @@ export default function CompetitionsPage() {
       </div>
 
       <h2 className="relative flex-col md:flex-row z-10 text-2xl md:text-4xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-semibold title-with-particles pb-2 mt-12 mb-8">
-        <span className="text-gradient-primary">Competitive Programming Highlights</span>
+        <span className="text-gradient-primary">{t('highlights_title')}</span>
       </h2>
       <Card className='lg:w-[1000px] w-[90%] mb-12 shadow-lg bg-neutral-800 text-white'>
         <CardTitle className='p-6 flex gap-7 bg-neutral-700 rounded-t-xl'>
-          Problem Solving & Weekly Contests
+          {t('highlights_card1_title')}
         </CardTitle>
         <CardContent className='p-6 flex flex-col'>
-          I regularly take part in weekly contests to sharpen my skills and learn new techniques.
-          <div className='flex flex-wrap gap-2 mt-2'> Platforms:
+          {t('highlights_card1_p1')}
+          <div className='flex flex-wrap gap-2 mt-2'> {t('highlights_card1_platforms_prefix')}
             <a href="https://codeforces.com/profile/Kairm_Zaf" target="_blank" rel="noopener noreferrer" className=' underline text-purple-400'>Codeforces</a>, 
             <a href="https://atcoder.jp/users/Kairm_Zaf" target="_blank" rel="noopener noreferrer" className=' underline text-purple-400'>AtCoder</a>, and 
             <a href="https://www.codechef.com/users/kairm_zaf" target="_blank" rel="noopener noreferrer" className=' underline text-purple-400'>CodeChef</a>.
         </div>
-          Recently, I became a Candidate Master on Codeforces (top 5%). This milestone reflects consistent progress, stronger algorithmic knowledge, and faster implementation.
+          {t('highlights_card1_p2')}
           <br/>
-          Problem solving resonates deeply with my CS studies: it boosts my ability to write clean, efficient code and to optimize programs across projects.
+          {t('highlights_card1_p3')}
         </CardContent>
       </Card>
       
       <Card className='lg:w-[1000px] w-[90%] mb-12 shadow-lg bg-neutral-800 text-white'>
         <CardTitle className='p-6 flex gap-7 bg-neutral-700 rounded-t-xl'>
-          Sharing Knowledge & Inspiring Others
+          {t('highlights_card2_title')}
         </CardTitle>
         <CardContent className='p-6 flex'>
-        I also share knowledge with younger students through workshops (with Freeways Club) on problem-solving and algorithms, and I publish recordings of contests on my YouTube channel to demystify strategies and motivate others to embrace competitive programming.
+        {t('highlights_card2_p1')}
         </CardContent>
       </Card>
 

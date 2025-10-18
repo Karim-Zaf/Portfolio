@@ -1,6 +1,8 @@
+"use client";
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import React from 'react';
+import { useLanguage } from '../Components/LanguageContext';
 import certificates from './cerficates.json'
 import Certificate from './Certificate';
 import {
@@ -11,17 +13,18 @@ import {
 } from "@/components/ui/accordion"
 
 function Certificates() {
+  const { t } = useLanguage();
   return (
     <div className='w-full flex flex-col items-center section-padding min-h-screen'>
       {/* Titre principal avec animation */}
       <h2 className="md:mt-20 mt-14 relative z-10 text-3xl md:text-5xl lg:text-6xl font-bold text-center tracking-tight slide-up title-with-particles">
-        <span className="text-gradient-primary">My Certificates</span>
+        <span className="text-gradient-primary">{t('title_certificates')}</span>
         <div className="mt-4 w-32 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full mx-auto"></div>
       </h2>
       
       {/* Sous-titre */}
       <div className='mt-6 text-xl md:text-2xl text-gray-400 mb-14 text-center max-w-3xl fade-in' style={{animationDelay: '0.2s'}}>
-        Explore my professional and academic certifications 🏆
+        {t('certificates_subtitle')}
       </div>
       
       {/* Section des certificats */}
@@ -80,7 +83,7 @@ function Certificates() {
                     {/* Overlay avec bouton */}
                     <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                       <div className="bg-white/20 backdrop-blur-sm rounded-xl p-3 border border-white/30">
-                        <span className="text-white font-medium">Cliquer pour agrandir</span>
+                        <span className="text-white font-medium">{t('click_to_enlarge')}</span>
                       </div>
                     </div>
                   </div>
@@ -92,7 +95,7 @@ function Certificates() {
                         <span className="text-sm">🏢</span>
                       </div>
                       <div>
-                        <p className="text-sm text-gray-400">Délivré par</p>
+                        <p className="text-sm text-gray-400">{t('issued_by')}</p>
                         <p className="font-semibold text-white">{Provider}</p>
                       </div>
                     </div>
@@ -102,9 +105,9 @@ function Certificates() {
                         href={WebSiteLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn-modern px-5 py-2 text-sm hover-lift bg-gradient-to-r from-blue-500 to-purple-600"
+                        className="btn-primary px-5 py-2 text-sm hover-lift"
                       >
-                        🌐 View online
+                        🌐 {t('cta_view_online')}
                       </a>
                     )}
                   </div>
@@ -119,23 +122,23 @@ function Certificates() {
       <div className="mt-20 text-center slide-up" style={{animationDelay: '0.8s'}}>
         <div className="card-modern p-8 max-w-2xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-bold text-gradient-accent mb-4">
-            Continuous learning 📚
+            {t('certificates_cta_title')}
           </h3>
           <p className="text-gray-300 mb-6">
-            I keep enhancing my skills through new courses and certifications regularly!
+            {t('certificates_cta_text')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/about"
-              className="btn-modern inline-block hover-lift"
+              className="btn-primary inline-block hover-lift"
             >
-              See my skills 💻
+              {t('certificates_cta_skills')}
             </a>
             <a
               href="/contact"
-              className="btn-modern inline-block hover-lift bg-gradient-to-r from-purple-500 to-pink-500"
+              className="btn-primary inline-block hover-lift"
             >
-              Training discussion 🎓
+              {t('certificates_cta_training')}
             </a>
           </div>
         </div>

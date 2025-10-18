@@ -1,14 +1,17 @@
+"use client";
 import { Card, CardContent, CardTitle } from '@/components/ui/card'
 import React from 'react'
 import skills from "./skills.json"
 import MyLinks from '../Components/MyLinks'
+import { useLanguage } from '../Components/LanguageContext'
 
 function About() {
+  const { t } = useLanguage();
   return (
     <div className='w-full flex flex-col items-center section-padding min-h-screen'>
       {/* Titre principal avec animation */}
       <h2 className="md:mt-20 mt-14 relative flex-col md:flex-row z-10 text-3xl md:text-5xl lg:text-6xl font-bold text-center tracking-tight slide-up title-with-particles">
-        <span className="text-gradient-primary">About Me</span>
+        <span className="text-gradient-primary">{t('about_title')}</span>
         <div className="mt-4 w-32 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full mx-auto"></div>
       </h2>
 
@@ -19,20 +22,20 @@ function About() {
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
               <span className="text-2xl">👤</span>
             </div>
-            <h3 className="text-xl md:text-2xl font-bold text-gradient-accent">Who am I?</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-gradient-accent">{t('who_am_i_title')}</h3>
           </div>
           
           <div className="text-base md:text-lg leading-relaxed text-gray-300 space-y-4">
             <p className="fade-in" style={{animationDelay: '0.4s'}}>
-              Computer Science Engineering student (Software Engineering track) at Université de Technologie de Compiègne (UTC), currently an apprentice at <span className="font-semibold">Cegedim</span>.
+              {t('who_am_i_p1')}
             </p>
             
             <p className="fade-in" style={{animationDelay: '0.6s'}}>
-              I’m passionate about technology, focusing on <span className="text-gradient-primary font-semibold">competitive programming</span>, <span className="text-gradient-accent font-semibold">machine learning</span>, <span className="text-gradient-primary font-semibold">web development</span>, <span className="text-gradient-accent font-semibold">DevOps</span>, and <span className="text-gradient-primary font-semibold">video editing</span>.
+              {t('who_am_i_p2')}
             </p>
             
             <p className="fade-in" style={{animationDelay: '0.8s'}}>
-              I’m always looking to expand my knowledge and sharpen my skills. I enjoy solving complex problems and contributing to impactful projects.
+              {t('who_am_i_p3')}
             </p>
             
             
@@ -42,7 +45,7 @@ function About() {
 
       {/* Titre Skills avec animation */}
       <h2 className="mt-16 mb-10 relative z-10 text-4xl md:text-6xl font-bold text-center tracking-tight slide-up title-with-particles">
-        <span className="text-gradient-accent">Skills</span>
+        <span className="text-gradient-accent">{t('skills_title')}</span>
         <div className="mt-4 w-32 h-1 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-full mx-auto"></div>
       </h2>
 
@@ -107,16 +110,16 @@ function About() {
       <div className="mt-20 text-center slide-up" style={{animationDelay: '1.2s'}}>
         <div className="card-modern p-8 max-w-2xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-bold text-gradient-primary mb-4">
-            Interested in my profile?
+            {t('about_cta_title')}
           </h3>
           <p className="text-gray-300 mb-6">
-            Feel free to reach out to discuss opportunities or collaborations!
+            {t('about_cta_text')}
           </p>
           <a
             href="/contact"
-            className="btn-modern inline-block hover-lift"
+            className="btn-primary inline-block hover-lift"
           >
-            Contact me 📧
+            {t('about_cta_button_contact')}
           </a>
         </div>
       </div>

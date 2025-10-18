@@ -57,10 +57,10 @@ function HomePage() {
           <a
             href='Karim_Zaafrani_Resume.pdf'
             download
-            className='inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-gradient-to-r from-gray-300 to-gray-500 text-neutral-900 font-semibold shadow-xl hover:from-gray-200 hover:to-gray-400 transition-all duration-300 border border-white/10 hover-lift'
+            className='inline-flex items-center gap-3 btn-primary hover-lift'
           >
             <span>📄</span>
-            <span>Download Resume</span>
+            <span>{t('cta_download_resume')}</span>
           </a>
         </div>
 
@@ -98,21 +98,21 @@ function HomePage() {
             <div className="text-3xl md:text-4xl font-bold text-gradient-primary group-hover:scale-110 transition-transform duration-300">
               50+
             </div>
-            <div className="text-sm md:text-base text-gray-400 mt-1">Projects</div>
+            <div className="text-sm md:text-base text-gray-400 mt-1">{t('stats_projects_label')}</div>
           </div>
           
           <div className="text-center group">
             <div className="text-3xl md:text-4xl font-bold text-gradient-accent group-hover:scale-110 transition-transform duration-300">
               3
             </div>
-            <div className="text-sm md:text-base text-gray-400 mt-1">Years exp.</div>
+            <div className="text-sm md:text-base text-gray-400 mt-1">{t('stats_years_exp_label')}</div>
           </div>
           
           <div className="text-center group">
             <div className="text-3xl md:text-4xl font-bold text-gradient-primary group-hover:scale-110 transition-transform duration-300">
               25+
             </div>
-            <div className="text-sm md:text-base text-gray-400 mt-1">Certificates</div>
+            <div className="text-sm md:text-base text-gray-400 mt-1">{t('stats_certificates_label')}</div>
           </div>
         </div>
       </div>

@@ -5,14 +5,14 @@ function ContactPage() {
   return (
     <div className='w-full flex flex-col items-center section-padding min-h-screen'>
       {/* Titre principal avec animation */}
-      <h2 className="md:mt-32 mt-20 relative z-10 text-4xl md:text-6xl lg:text-7xl font-bold text-center tracking-tight slide-up title-with-particles">
+      <h2 className="md:mt-20 mt-14 relative z-10 text-3xl md:text-5xl lg:text-6xl font-bold text-center tracking-tight slide-up title-with-particles">
         <span className="text-gradient-primary">Contact</span>
         <div className="mt-4 w-32 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full mx-auto"></div>
       </h2>
       
       {/* Sous-titre */}
-      <div className='mt-8 text-xl md:text-2xl text-gray-400 mb-16 text-center max-w-3xl fade-in' style={{animationDelay: '0.2s'}}>
-        N'hésitez pas à me contacter ! Je serais ravi d'échanger avec vous 💬
+      <div className='mt-6 text-xl md:text-2xl text-gray-400 mb-14 text-center max-w-3xl fade-in' style={{animationDelay: '0.2s'}}>
+        Feel free to contact me! I’d be happy to talk 💬
       </div>
 
       <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -20,29 +20,31 @@ function ContactPage() {
         <div className="space-y-8 slide-up" style={{animationDelay: '0.4s'}}>
           <div className="card-modern p-8 hover-lift">
             <h3 className="text-2xl md:text-3xl font-bold text-gradient-accent mb-6">
-              Restons en contact !
+              Let’s keep in touch!
             </h3>
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
-              Je suis toujours ouvert aux nouvelles opportunités, collaborations et discussions intéressantes. 
-              Que vous souhaitiez discuter d'un projet, d'une opportunité de stage, ou simplement échanger sur la tech, 
-              je serai ravi de vous répondre !
+              I’m always open to new opportunities, collaborations and interesting discussions.
+              Whether you want to talk about a project, an apprenticeship opportunity, or simply chat about tech,
+              I’d be glad to respond!
             </p>
 
             {/* Moyens de contact */}
             <div className="space-y-6">
               <div className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:border-blue-400/50 transition-all duration-300 group">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-xl">📧</span>
+                  <img src="/mail.svg" alt="Email" className="w-6 h-6" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-white">Email</h4>
-                  <p className="text-gray-400">karim.zaafrani@example.com</p>
+                  <a href="mailto:kzaafrani@gmail.com" className="text-gray-300 hover:text-white underline-offset-4 hover:underline">
+                    kzaafrani@gmail.com
+                  </a>
                 </div>
               </div>
 
               <div className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:border-green-400/50 transition-all duration-300 group">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-xl">💼</span>
+                  <img src="/SocialMedia/LinkedIn.png" alt="LinkedIn" className="w-6 h-6 object-contain" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-white">LinkedIn</h4>
@@ -52,7 +54,7 @@ function ContactPage() {
 
               <div className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:border-purple-400/50 transition-all duration-300 group">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-xl">🐙</span>
+                  <img src="/SocialMedia/github.png" alt="GitHub" className="w-6 h-6 object-contain" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-white">GitHub</h4>
@@ -61,13 +63,13 @@ function ContactPage() {
               </div>
             </div>
 
-            {/* Temps de réponse */}
+            {/* Response time */}
             <div className="mt-8 p-4 rounded-xl bg-gradient-to-r from-blue-500/10 to-purple-600/10 border border-blue-500/20">
               <div className="flex items-center gap-3">
                 <span className="text-2xl">⚡</span>
                 <div>
-                  <h4 className="font-semibold text-white">Temps de réponse</h4>
-                  <p className="text-gray-300">Généralement sous 24h</p>
+                  <h4 className="font-semibold text-white">Response time</h4>
+                  <p className="text-gray-300">Usually within 24 hours</p>
                 </div>
               </div>
             </div>
@@ -82,7 +84,7 @@ function ContactPage() {
                 <span className="text-xl">✉️</span>
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-gradient-primary">
-                Envoyez-moi un message
+                Send me a message
               </h3>
             </div>
 
@@ -91,7 +93,7 @@ function ContactPage() {
               
               <div className="stagger-item">
                 <label htmlFor='name' className='block text-gray-300 mb-3 font-medium'>
-                  Nom complet *
+                  Full name *
                 </label>
                 <input
                   type='text'
@@ -99,13 +101,13 @@ function ContactPage() {
                   name='name'
                   required
                   className='w-full px-4 py-3 bg-white/5 border border-white/10 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-white/20'
-                  placeholder='Votre nom et prénom'
+                  placeholder='Your full name'
                 />
               </div>
 
               <div className="stagger-item">
                 <label htmlFor='email' className='block text-gray-300 mb-3 font-medium'>
-                  Adresse email *
+                  Email address *
                 </label>
                 <input
                   type='email'
@@ -113,20 +115,20 @@ function ContactPage() {
                   name='email'
                   required
                   className='w-full px-4 py-3 bg-white/5 border border-white/10 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-white/20'
-                  placeholder='votre.email@exemple.com'
+                  placeholder='your@email.com'
                 />
               </div>
 
               <div className="stagger-item">
                 <label htmlFor='subject' className='block text-gray-300 mb-3 font-medium'>
-                  Sujet
+                  Subject
                 </label>
                 <input
                   type='text'
                   id='subject'
                   name='subject'
                   className='w-full px-4 py-3 bg-white/5 border border-white/10 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-white/20'
-                  placeholder='Sujet de votre message'
+                  placeholder='Subject of your message'
                 />
               </div>
 
@@ -140,7 +142,7 @@ function ContactPage() {
                   name='message'
                   required
                   className='w-full px-4 py-3 bg-white/5 border border-white/10 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 hover:border-white/20 resize-none'
-                  placeholder='Décrivez votre projet, vos questions, ou ce dont vous aimeriez discuter...'
+                  placeholder='Describe your project, your questions, or what you’d like to discuss...'
                 ></textarea>
               </div>
 
@@ -150,7 +152,7 @@ function ContactPage() {
               >
                 <span className="relative z-10 flex items-center justify-center gap-3">
                   <span className="group-hover:rotate-12 transition-transform duration-300">📤</span>
-                  Envoyer le message
+                  Send message
                 </span>
               </button>
             </form>
@@ -158,7 +160,7 @@ function ContactPage() {
             {/* Note de confidentialité */}
             <div className="mt-6 p-4 rounded-xl bg-gray-800/50 border border-gray-700">
               <p className="text-sm text-gray-400 text-center">
-                🔒 Vos informations sont sécurisées et ne seront jamais partagées avec des tiers.
+                🔒 Your information is safe and will never be shared with third parties.
               </p>
             </div>
           </div>
@@ -169,10 +171,10 @@ function ContactPage() {
       <div className="mt-20 text-center slide-up" style={{animationDelay: '0.8s'}}>
         <div className="card-modern p-8 max-w-3xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-bold text-gradient-accent mb-4">
-            Suivez-moi sur les réseaux
+            Follow me on socials
           </h3>
           <p className="text-gray-300 mb-8">
-            Restez connecté pour suivre mes derniers projets et actualités !
+            Stay tuned for my latest projects and updates!
           </p>
           <div className="flex justify-center gap-6">
             <a
@@ -181,7 +183,7 @@ function ContactPage() {
               rel="noopener noreferrer"
               className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center hover-lift group transition-all duration-300"
             >
-              <span className="text-2xl group-hover:scale-110 transition-transform duration-300">💼</span>
+            <img src="/SocialMedia/LinkedIn.png" alt="LinkedIn" className="w-7 h-7 object-contain group-hover:scale-110 transition-transform duration-300" />
             </a>
             <a
               href="https://github.com/Karim-Zaf"
@@ -189,7 +191,7 @@ function ContactPage() {
               rel="noopener noreferrer"
               className="w-14 h-14 rounded-xl bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center hover-lift group transition-all duration-300"
             >
-              <span className="text-2xl group-hover:scale-110 transition-transform duration-300">🐙</span>
+            <img src="/SocialMedia/github.png" alt="GitHub" className="w-7 h-7 object-contain group-hover:scale-110 transition-transform duration-300" />
             </a>
             <a
               href="https://codeforces.com/profile/Kairm_Zaf"
@@ -197,7 +199,7 @@ function ContactPage() {
               rel="noopener noreferrer"
               className="w-14 h-14 rounded-xl bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center hover-lift group transition-all duration-300"
             >
-              <span className="text-2xl group-hover:scale-110 transition-transform duration-300">🏆</span>
+            <img src="/SocialMedia/codeforces.webp" alt="Codeforces" className="w-7 h-7 object-contain group-hover:scale-110 transition-transform duration-300" />
             </a>
           </div>
         </div>

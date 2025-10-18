@@ -5,6 +5,8 @@ import "./globals.css";
 import { StarsBackground } from "./Components/StarsBackground";
 import { ShootingStars } from "./Components/StarsShoot";
 import Navbara from "./Components/Navbara";
+import { LanguageProvider } from "./Components/LanguageContext";
+import AnimationProvider from "./Components/AnimationProvider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -35,17 +37,21 @@ export default function RootLayout({
       <title>Karim Zaafrani</title>
       <link rel="icon" href="identity_picture.jpeg" />
       
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
-      >
-        <div className="overflow-x-hidden h-full w-full rounded-md bg-neutral-900 flex flex-col items-center justify-center relative p-0 m-0">
-          
-        <ShootingStars className="z-0 h-screen w-screen"/>
-          <StarsBackground  className="z-0 h-screen w-screen"/>
-          <Navbara />
-           <div className="z-40">  {children}</div>
-            
-        </div>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-neutral-900`}>
+        <LanguageProvider>
+          <div className="overflow-x-hidden min-h-screen w-full relative p-0 m-0">
+            {/* Fond étoilé fixé sur tout le site */}
+            <div className="fixed inset-0 z-0 pointer-events-none">
+              <ShootingStars className="h-full w-full" />
+              <StarsBackground className="h-full w-full" />
+            </div>
+
+            <AnimationProvider>
+              <Navbara />
+              <main className="relative z-10">{children}</main>
+            </AnimationProvider>
+          </div>
+        </LanguageProvider>
       </body>
       
     </html>

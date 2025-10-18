@@ -1,5 +1,13 @@
 [
     {
+        "title": "LecRom Coaching",
+        "description": "A professional coaching website with online payments (Stripe 3D Secure), FAQ, pricing plans, and a clean booking flow tailored for gym training.",
+        "technologies": ["NextJS", "React", "Tailwind", "TypeScript", "Stripe"],
+        "imageLink": "/Projects images/lcromcoach.png",
+        "sourceCodeLink": "",
+        "webSiteLink": "https://lecromcoach.vercel.app/"
+    },
+    {
         "title": "Plantaneuse",
         "description": "A university teamwork project focused on creating a plant shop website. The main feature is a powerful search algorithm using TF-IDF to make finding plants fast and efficient. The goal was to build a highly performant and user-friendly platform.",
         "technologies": ["Laravel", "PHP", "Python", "Flask", "Tailwind", "JavaScript", "SupaBase"],

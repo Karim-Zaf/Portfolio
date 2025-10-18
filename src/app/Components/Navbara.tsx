@@ -4,19 +4,21 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { useState, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
+import { useLanguage } from './LanguageContext';
 
 function Navbara() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
+  const { lang, setLang, t } = useLanguage();
   
   const options = [
-    { name: 'Accueil', key: 'home', icon: '🏠' },
-    { name: 'À propos', key: 'about', icon: '👤' },
-    { name: 'Projets', key: 'projects', icon: '💻' },
-    { name: 'Certificats', key: 'certificates', icon: '🏆' },
-    { name: 'Compétitions', key: 'competitions', icon: '🎯' },
-    { name: 'Montage Vidéo', key: 'videoediting', icon: '🎬' },
-    { name: 'Contact', key: 'contact', icon: '📧' }
+    { name: t('nav_home'), key: 'home', icon: '🏠' },
+    { name: t('nav_about'), key: 'about', icon: '👤' },
+    { name: t('nav_projects'), key: 'projects', icon: '💻' },
+    { name: t('nav_certificates'), key: 'certificates', icon: '🏆' },
+    { name: t('nav_competitions'), key: 'competitions', icon: '🎯' },
+    { name: t('nav_videoediting'), key: 'videoediting', icon: '🎬' },
+    { name: t('nav_contact'), key: 'contact', icon: '📧' }
   ];
   
   const router = useRouter();
@@ -65,7 +67,7 @@ function Navbara() {
                     "relative px-4 py-2 rounded-xl font-medium transition-all duration-300 group hover-lift",
                     "text-sm lg:text-base",
                     isActive(option.key)
-                      ? "text-gradient-primary bg-white/10"
+                      ? "text-white bg-white/10 border border-white/20"
                       : "text-gray-300 hover:text-white hover:bg-white/5"
                   )}
                   style={{animationDelay: `${index * 0.1}s`}}
@@ -83,12 +85,32 @@ function Navbara() {
                     isActive(option.key) && "opacity-100"
                   )}></div>
                   
-                  {/* Indicateur actif */}
-                  {isActive(option.key) && (
-                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/2 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"></div>
-                  )}
+                  
                 </button>
               ))}
+              {/* Language switch (segmented EN/FR) */}
+              <div className="ml-3 select-none" aria-label="Language switcher">
+                <div className="glass rounded-xl p-0.5 flex items-center gap-0.5 border border-white/15">
+                  <button
+                    onClick={() => setLang('en')}
+                    className={cn(
+                      'px-3 py-1.5 rounded-lg text-xs font-semibold transition',
+                      lang === 'en' ? 'bg-white/20 text-white' : 'text-gray-300 hover:text-white'
+                    )}
+                  >
+                    EN
+                  </button>
+                  <button
+                    onClick={() => setLang('fr')}
+                    className={cn(
+                      'px-3 py-1.5 rounded-lg text-xs font-semibold transition',
+                      lang === 'fr' ? 'bg-white/20 text-white' : 'text-gray-300 hover:text-white'
+                    )}
+                  >
+                    FR
+                  </button>
+                </div>
+              </div>
             </div>
 
             {/* Menu hamburger mobile */}
@@ -134,7 +156,7 @@ function Navbara() {
                       "flex items-center gap-4 px-4 py-3 rounded-xl font-medium transition-all duration-300 text-left group",
                       "stagger-item",
                       isActive(option.key)
-                        ? "text-gradient-primary bg-white/15 border border-blue-500/30"
+                        ? "text-white bg-white/15 border border-white/30"
                         : "text-gray-300 hover:text-white hover:bg-white/10"
                     )}
                     style={{animationDelay: `${index * 0.05}s`}}
@@ -151,14 +173,38 @@ function Navbara() {
                     </div>
                   </button>
                 ))}
+                <div className="pt-2">
+                  <div className="w-full flex items-center justify-center">
+                    <div className="glass rounded-xl p-0.5 flex items-center gap-0.5 border border-white/15">
+                      <button
+                        onClick={() => setLang('en')}
+                        className={cn(
+                          'px-4 py-2 rounded-lg text-sm font-semibold transition',
+                          lang === 'en' ? 'bg-white/20 text-white' : 'text-gray-300 hover:text-white'
+                        )}
+                      >
+                        EN
+                      </button>
+                      <button
+                        onClick={() => setLang('fr')}
+                        className={cn(
+                          'px-4 py-2 rounded-lg text-sm font-semibold transition',
+                          lang === 'fr' ? 'bg-white/20 text-white' : 'text-gray-300 hover:text-white'
+                        )}
+                      >
+                        FR
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </nav>
 
-      {/* Spacer pour éviter que le contenu soit caché sous la navbar */}
-      <div className="h-16"></div>
+      {/* Spacer réduit */}
+      <div className="h-8"></div>
     </>
   );
 }

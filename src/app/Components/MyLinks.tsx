@@ -49,7 +49,7 @@ export default function MyLinks({ imageLink, placeHolder, link, className = "" }
       </div>
       
       {/* Effet de pulsation subtle */}
-      <div className="absolute inset-0 rounded-xl bg-blue-400/20 opacity-0 group-hover:opacity-100 animate-ping"></div>
+      <div className="absolute inset-0 rounded-xl bg-blue-400/20 opacity-0 group-hover:opacity-100 animate-ping pointer-events-none"></div>
     </div>
   );
 }

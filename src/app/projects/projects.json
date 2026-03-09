@@ -29,6 +29,21 @@
         "webSiteLink": "https://amine-chalfouh.vercel.app/"
     },
     {
+        "title": "FocusOS",
+        "description": "An AI-powered productivity agent built with LangGraph. Monitors active apps via psutil, detects user presence with OpenCV (Haar Cascade), calculates a real-time productivity score, sends alerts when distracted, and generates personalized session reports using Groq LLM.",
+        "description_fr": "Un agent de productivité propulsé par l'IA, construit avec LangGraph. Surveille les applications actives via psutil, détecte la présence de l'utilisateur avec OpenCV (Haar Cascade), calcule un score de productivité en temps réel, envoie des alertes en cas de distraction, et génère des rapports personnalisés via Groq LLM.",
+        "technologies": [
+            "Python",
+            "LangGraph",
+            "OpenCV",
+            "Groq",
+            "psutil"
+        ],
+        "imageLink": "/Projects images/Nadhamni.png",
+        "sourceCodeLink": "",
+        "webSiteLink": ""
+    },
+    {
         "title": "Plantaneuse",
         "description": "A university teamwork project focused on creating a plant shop website. The main feature is a powerful search algorithm using TF-IDF to make finding plants fast and efficient. The goal was to build a highly performant and user-friendly platform.",
         "description_fr": "Projet universitaire en équipe visant à créer un site de boutique de plantes. La fonctionnalité principale est un moteur de recherche performant basé sur TF‑IDF pour retrouver rapidement les plantes. L'objectif était de construire une plateforme très performante et simple d’utilisation.",

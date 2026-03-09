@@ -29,7 +29,7 @@
         "webSiteLink": "https://amine-chalfouh.vercel.app/"
     },
     {
-        "title": "FocusOS",
+        "title": "Nadhamni",
         "description": "An AI-powered productivity agent built with LangGraph. Monitors active apps via psutil, detects user presence with OpenCV (Haar Cascade), calculates a real-time productivity score, sends alerts when distracted, and generates personalized session reports using Groq LLM.",
         "description_fr": "Un agent de productivité propulsé par l'IA, construit avec LangGraph. Surveille les applications actives via psutil, détecte la présence de l'utilisateur avec OpenCV (Haar Cascade), calcule un score de productivité en temps réel, envoie des alertes en cas de distraction, et génère des rapports personnalisés via Groq LLM.",
         "technologies": [
@@ -40,7 +40,7 @@
             "psutil"
         ],
         "imageLink": "/Projects images/Nadhamni.png",
-        "sourceCodeLink": "",
+        "sourceCodeLink": "https://github.com/Karim-Zaf/Nadhamni",
         "webSiteLink": ""
     },
     {

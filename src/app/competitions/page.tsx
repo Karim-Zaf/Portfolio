@@ -59,36 +59,37 @@ export default function CompetitionsPage() {
         </div>
       </section>
 
-      <section className="w-full max-w-5xl mt-16">
-        <h2 className="text-2xl md:text-4xl font-bold text-center mb-8">
-          <span className="text-gradient">{t('tcpc_2025_title')}</span>
-        </h2>
-        <div className="mb-8">
-          <Slidings paths={slides_TCPC_2025.map((i) => `Competitions/TCPC 2025/TCPC_${i}.jpg`)} />
-        </div>
-        <div className='card-modern overflow-hidden'>
-          <div className='px-6 py-4 bg-white/[0.03] border-b border-white/5'>
-            <h3 className="text-lg font-semibold text-white">{t('tcpc_2025_card_title')}</h3>
-          </div>
-          <div className='p-6 text-slate-300 leading-relaxed space-y-3'>
-            <p>{t('tcpc_2025_p1')}</p>
-            <div className='space-y-1 pl-4 border-l-2 border-slate-600'>
-              <p>{t('tcpc_2025_progress_1')}</p>
-              <p>{t('tcpc_2025_progress_2')}</p>
-              <p className="text-white font-medium">{t('tcpc_2025_progress_3')}</p>
-            </div>
-            <p>{t('tcpc_2025_p2')}</p>
-          </div>
-        </div>
-      </section>
-
-
-      {/* TCPC 2026 */}
+      {/* TCPC 2026 — Featured */}
       <section className="w-full max-w-5xl mt-16">
         <h2 className="text-2xl md:text-4xl font-bold text-center mb-8">
           <span className="text-gradient">{t('tcpc_2026_title')}</span>
         </h2>
-        <Slidings paths={slides_TCPC_2026.map((i) => `Competitions/TCPC 2026/TCPC_${i}.jpg`)} />
+        <div className="mb-8">
+          <Slidings paths={slides_TCPC_2026.map((i) => `Competitions/TCPC 2026/TCPC_${i}.jpg`)} />
+        </div>
+        <div className='card-modern overflow-hidden'>
+          <div className='px-6 py-4 bg-white/[0.03] border-b border-white/5'>
+            <h3 className="text-lg font-semibold text-white">{t('tcpc_2026_card_title')}</h3>
+          </div>
+          <div className='p-6 text-slate-300 leading-relaxed space-y-3'>
+            <p>{t('tcpc_2026_p1')}</p>
+            <div className='space-y-1 pl-4 border-l-2 border-slate-600'>
+              <p>{t('tcpc_2026_progress_1')}</p>
+              <p>{t('tcpc_2026_progress_2')}</p>
+              <p>{t('tcpc_2026_progress_3')}</p>
+              <p className="text-white font-medium">{t('tcpc_2026_progress_4')}</p>
+            </div>
+            <p>{t('tcpc_2026_p2')}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* TCPC 2025 */}
+      <section className="w-full max-w-5xl mt-16">
+        <h2 className="text-2xl md:text-4xl font-bold text-center mb-8">
+          <span className="text-gradient">{t('tcpc_2025_title')}</span>
+        </h2>
+        <Slidings paths={slides_TCPC_2025.map((i) => `Competitions/TCPC 2025/TCPC_${i}.jpg`)} />
       </section>
       {/* YouTube Content */}
       <section className="w-full max-w-5xl mt-16">

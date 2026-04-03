@@ -80,13 +80,13 @@ const STRINGS: Record<SupportedLang, Record<string, string>> = {
     contact_github_label_short: "GitHub",
     // Competitions
     competitions_hero_title: "Competitive Programming Journey",
-    competitions_hero_subtitle: "From early contests to national titles — a steady climb powered by persistence, teamwork, and love for problem solving.",
+    competitions_hero_subtitle: "2x Tunisian Champion (TCPC) · 3x ACPC Qualifier · From early contests to national titles, powered by persistence and teamwork.",
     competitions_stats_problems_label: "Problems solved",
     competitions_stats_codeforces_label: "Codeforces Candidate Master",
     competitions_stats_years_label: "Active competing",
     who_are_diga_title: "Who are DIGA DIGA?",
     who_are_diga_p1: "We are DIGA DIGA, a competitive programming team from the Higher Institute of Computer Science (ISI), part of Tunis El Manar University. Composed of Karim Zaafrani, Firas Briki, and Adem Ksouri, we thrive on solving challenging algorithmic problems and pushing our limits through competitions.",
-    who_are_diga_p2: "Driven by a love for coding and teamwork, we actively compete in prestigious events such as the Tunisian Collegiate Programming Contest (TCPC 2025), where we became Tunisian Champions and qualified for the Africa and Arab Collegiate Programming Championship (ACPC).",
+    who_are_diga_p2: "Driven by a love for coding and teamwork, we are 2-time Tunisian Champions at the TCPC (2025 & 2026) and 3-time qualifiers for the Africa and Arab Collegiate Programming Championship (ACPC).",
     who_are_diga_p3: "The name DIGA DIGA — meaning “slowly, slowly” in Tunisian dialect — reflects our philosophy: continuous, steady progress and the commitment to becoming a better version of ourselves with every challenge. Believe in yourself and in your dreams.",
     tcpc_2025_title: "TCPC 2025",
     tcpc_2025_card_title: "Tunisian Champion — TCPC 2025",
@@ -190,13 +190,13 @@ const STRINGS: Record<SupportedLang, Record<string, string>> = {
     contact_github_label_short: "GitHub",
     // Competitions
     competitions_hero_title: "Parcours en Programmation Compétitive",
-    competitions_hero_subtitle: "Des premiers concours aux titres nationaux — une progression constante portée par la persévérance, l'esprit d'équipe et l'amour de la résolution de problèmes.",
+    competitions_hero_subtitle: "2x Champion de Tunisie (TCPC) · 3x Qualifié à l'ACPC · Des premiers concours aux titres nationaux, portés par la persévérance et l'esprit d'équipe.",
     competitions_stats_problems_label: "Problèmes résolus",
     competitions_stats_codeforces_label: "Codeforces Candidate Master",
     competitions_stats_years_label: "Années de compétition active",
     who_are_diga_title: "Qui sont DIGA DIGA ?",
     who_are_diga_p1: "Nous sommes DIGA DIGA, une équipe de programmation compétitive de l'Institut Supérieur d'Informatique (ISI), rattaché à l'Université de Tunis El Manar. Composée de Karim Zaafrani, Firas Briki et Adem Ksouri, nous aimons résoudre des problèmes algorithmiques exigeants et dépasser nos limites à travers les compétitions.",
-    who_are_diga_p2: "Animés par l'envie de coder et l'esprit d'équipe, nous participons activement à des événements prestigieux tels que le Tunisian Collegiate Programming Contest (TCPC 2025), où nous sommes devenus Champions de Tunisie et qualifiés pour l'ACPC (Africa and Arab Collegiate Programming Championship).",
+    who_are_diga_p2: "Animés par la passion du code et l'esprit d'équipe, nous sommes 2 fois Champions de Tunisie au TCPC (2025 & 2026) et 3 fois qualifiés pour l'ACPC (Africa and Arab Collegiate Programming Championship).",
     who_are_diga_p3: "Le nom DIGA DIGA — signifiant « doucement, doucement » en dialecte tunisien — reflète notre philosophie : une progression continue et régulière, et l'engagement à devenir une meilleure version de nous-mêmes à chaque défi. Croyez en vous et en vos rêves.",
     tcpc_2025_title: "TCPC 2025",
     tcpc_2025_card_title: "Champion de Tunisie — TCPC 2025",
@@ -239,7 +239,7 @@ const ARRAYS: Record<SupportedLang, Record<string, string[]>> = {
   en: {
     home_words: [
       'Computer Science Engineering Student',
-      'Competitive Programming Champion',
+      '2x Tunisian Champion — TCPC',
       'Full‑Stack Developer',
       'Machine Learning Enthusiast',
       'Open Source Contributor',
@@ -248,7 +248,7 @@ const ARRAYS: Record<SupportedLang, Record<string, string[]>> = {
   fr: {
     home_words: [
       "Étudiant en ingénierie informatique",
-      "Champion TCPC 2025",
+      "2x Champion de Tunisie — TCPC",
       "Développeur Full‑Stack",
       "Passionné de Machine Learning",
       "Contributeur Open Source",

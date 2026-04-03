@@ -20,7 +20,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Karim Zaafrani | Software Engineer",
-  description: "Portfolio of Karim Zaafrani — Software Engineering student, Competitive Programming Champion, Full-Stack Developer.",
+  description: "Portfolio of Karim Zaafrani — Software Engineering student, 2x Tunisian Champion (TCPC), 3x ACPC Qualifier, Full-Stack Developer.",
   icons: {
     icon: "/favicon.svg",
   },

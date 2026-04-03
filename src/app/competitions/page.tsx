@@ -10,7 +10,7 @@ export default function CompetitionsPage() {
   const slides_instructor = Array.from({ length: 6 }, (_, i) => i + 1);
   const slides_TCPC_2025 = Array.from({ length: 4 }, (_, i) => i + 1);
   const slides_TCPC_2026 = Array.from({ length: 7 }, (_, i) => i + 1);
-  const slides_ACPC_2025 = Array.from({ length: 2 }, (_, i) => i + 1);
+  const slides_ACPC_2025 = Array.from({ length: 13 }, (_, i) => i + 1);
   const fichiers = [
     "1706869629285.jpeg","ACPC_28.jpg","1709832494079.jpeg","1709832477599.jpeg",
     "1706869620538.jpeg","1716364310323.jpeg","1716364310891.jpeg",

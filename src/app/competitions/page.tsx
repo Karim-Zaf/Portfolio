@@ -9,6 +9,8 @@ export default function CompetitionsPage() {
   const slides_TCPC = Array.from({ length: 7 }, (_, i) => i + 1);
   const slides_instructor = Array.from({ length: 6 }, (_, i) => i + 1);
   const slides_TCPC_2025 = Array.from({ length: 4 }, (_, i) => i + 1);
+  const slides_TCPC_2026 = Array.from({ length: 7 }, (_, i) => i + 1);
+  const slides_ACPC_2025 = Array.from({ length: 2 }, (_, i) => i + 1);
   const fichiers = [
     "1706869629285.jpeg","ACPC_28.jpg","1709832494079.jpeg","1709832477599.jpeg",
     "1706869620538.jpeg","1716364310323.jpeg","1716364310891.jpeg",
@@ -80,6 +82,14 @@ export default function CompetitionsPage() {
         </div>
       </section>
 
+
+      {/* TCPC 2026 */}
+      <section className="w-full max-w-5xl mt-16">
+        <h2 className="text-2xl md:text-4xl font-bold text-center mb-8">
+          <span className="text-gradient">{t('tcpc_2026_title')}</span>
+        </h2>
+        <Slidings paths={slides_TCPC_2026.map((i) => `Competitions/TCPC 2026/TCPC_${i}.jpg`)} />
+      </section>
       {/* YouTube Content */}
       <section className="w-full max-w-5xl mt-16">
         <h2 className="text-2xl md:text-4xl font-bold text-center mb-4">
@@ -149,6 +159,14 @@ export default function CompetitionsPage() {
             {t('yt_cta_channel')}
           </a>
         </div>
+      </section>
+
+      {/* ACPC 2025 */}
+      <section className="w-full max-w-5xl mt-16">
+        <h2 className="text-2xl md:text-4xl font-bold text-center mb-8">
+          <span className="text-gradient">{t('acpc_2025_title')}</span>
+        </h2>
+        <Slidings paths={slides_ACPC_2025.map((i) => `Competitions/ACPC 2025/ACPC_${i}.jpg`)} />
       </section>
 
       <section className="w-full max-w-5xl mt-16">

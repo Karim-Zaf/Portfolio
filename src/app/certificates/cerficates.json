@@ -1,245 +1,350 @@
 [
     {
+        "title": "TCPC 2026 — Tunisian Champion",
+        "skills": [
+            "Competitive Programming",
+            "1st Place"
+        ],
+        "ImageLink": "Certificates images/TCPC26 winners.png",
+        "Provider": "ICPC",
+        "WebSiteLink": ""
+    },
+    {
         "title": "TCPC 2025 — Tunisian Champion",
-        "skills": ["Competitive Programming", "1st Place"],
+        "skills": [
+            "Competitive Programming",
+            "1st Place"
+        ],
         "ImageLink": "Certificates images/TCPC25 winners.png",
         "Provider": "ICPC",
         "WebSiteLink": ""
     },
     {
         "title": "SWERC 2025",
-        "skills": ["Competitive Programming", "ICPC Regional"],
+        "skills": [
+            "Competitive Programming",
+            "ICPC Regional"
+        ],
         "ImageLink": "Certificates images/SWERC25.png",
         "Provider": "ICPC",
         "WebSiteLink": ""
     },
     {
         "title": "ACPC 2025",
-        "skills": ["Competitive Programming", "ICPC Africa"],
+        "skills": [
+            "Competitive Programming",
+            "ICPC Africa"
+        ],
         "ImageLink": "Certificates images/ACPC25.png",
         "Provider": "ICPC",
         "WebSiteLink": ""
     },
     {
         "title": "Meta Hacker Cup 2025",
-        "skills": ["Competitive Programming"],
+        "skills": [
+            "Competitive Programming"
+        ],
         "ImageLink": "Certificates images/hackercup25.png",
         "Provider": "Meta",
         "WebSiteLink": ""
     },
     {
         "title": "IOPC by ODOO",
-        "skills": ["Competitive Programming"],
+        "skills": [
+            "Competitive Programming"
+        ],
         "ImageLink": "Certificates images/IOPC by ODOO CP competition.png",
         "Provider": "acm",
         "WebSiteLink": ""
     },
     {
         "title": "SQL by HackerRank",
-        "skills": ["SQL", "Databases"],
+        "skills": [
+            "SQL",
+            "Databases"
+        ],
         "ImageLink": "Certificates images/SQL by HackerRank.png",
         "Provider": "HackerRank",
         "WebSiteLink": ""
     },
     {
         "title": "Machine Learning Specialisation",
-        "skills": ["Machine Learning", "Specialisation"],
+        "skills": [
+            "Machine Learning",
+            "Specialisation"
+        ],
         "ImageLink": "Certificates images/Machine Learning Specialisation by Standford University & Deeplearning.ai & Coursera.png",
         "Provider": "Stanford",
         "WebSiteLink": ""
     },
     {
         "title": "Advanced Learning Algorithms",
-        "skills": ["Machine Learning", "Algorithms"],
+        "skills": [
+            "Machine Learning",
+            "Algorithms"
+        ],
         "ImageLink": "Certificates images/Advanced Learning Algorithms by Standford & DeepLearning.ai & Coursera.png",
         "Provider": "Stanford",
         "WebSiteLink": ""
     },
     {
         "title": "Supervised Machine Learning: Regression and Classification",
-        "skills": ["Supervised Learning", "Classification"],
+        "skills": [
+            "Supervised Learning",
+            "Classification"
+        ],
         "ImageLink": "Certificates images/Supervised Machine Learning: Regression and classification by Standford University & Deeplearning.ai & Coursera.png",
         "Provider": "Stanford",
         "WebSiteLink": ""
     },
     {
         "title": "Unsupervised Learning",
-        "skills": ["Machine Learning", "Unsupervised Learning"],
+        "skills": [
+            "Machine Learning",
+            "Unsupervised Learning"
+        ],
         "ImageLink": "Certificates images/Unsupervised Leraning by Standford University & Deeplearning.ai & Coursera.png",
         "Provider": "Stanford",
         "WebSiteLink": ""
     },
     {
         "title": "Intermediate Machine Learning",
-        "skills": ["Machine Learning", "Intermediate"],
+        "skills": [
+            "Machine Learning",
+            "Intermediate"
+        ],
         "ImageLink": "Certificates images/Intermediate Machine Learning by KAGGLE.png",
         "Provider": "Kaggle",
         "WebSiteLink": ""
     },
     {
         "title": "AI-Driven Cybersecurity: The Rise of Intelligent Threats",
-        "skills": ["Cybersecurity", "AI"],
+        "skills": [
+            "Cybersecurity",
+            "AI"
+        ],
         "ImageLink": "Certificates images/AI-Driven Cybersecurity: The Rise of Intelligent Threats.png",
         "Provider": "ey",
         "WebSiteLink": ""
     },
     {
         "title": "Cybersecurity in Cloud Computing",
-        "skills": ["Cybersecurity", "Cloud Computing"],
+        "skills": [
+            "Cybersecurity",
+            "Cloud Computing"
+        ],
         "ImageLink": "Certificates images/Cybersecurity in Cloud Computing by Securinets.png",
         "Provider": "HackTheBox",
         "WebSiteLink": ""
     },
     {
         "title": "React by HackerRank",
-        "skills": ["React", "Web Development"],
+        "skills": [
+            "React",
+            "Web Development"
+        ],
         "ImageLink": "Certificates images/React by HackerRank.png",
         "Provider": "HackerRank",
         "WebSiteLink": ""
     },
     {
         "title": "Foundational C#",
-        "skills": ["C#", "Programming"],
+        "skills": [
+            "C#",
+            "Programming"
+        ],
         "ImageLink": "Certificates images/Foundational C sharp with Mircrosoft & FreeCodeCamp.png",
         "Provider": "Microsoft",
         "WebSiteLink": ""
     },
     {
         "title": "Getting Started with Git and GitHub",
-        "skills": ["Git", "GitHub"],
+        "skills": [
+            "Git",
+            "GitHub"
+        ],
         "ImageLink": "Certificates images/Getting Started with Git and Github by IBM & Coursera.png",
         "Provider": "IBM",
         "WebSiteLink": ""
     },
     {
         "title": "Java by HackerRank",
-        "skills": ["Java", "Programming"],
+        "skills": [
+            "Java",
+            "Programming"
+        ],
         "ImageLink": "Certificates images/Java by HackerRank.png",
         "Provider": "HackerRank",
         "WebSiteLink": ""
     },
     {
         "title": "JavaScript by HackerRank",
-        "skills": ["JavaScript", "Web Development"],
+        "skills": [
+            "JavaScript",
+            "Web Development"
+        ],
         "ImageLink": "Certificates images/JavaScript by HackerRank.png",
         "Provider": "HackerRank",
         "WebSiteLink": ""
     },
     {
         "title": "Python by HackerRank",
-        "skills": ["Python", "Programming"],
+        "skills": [
+            "Python",
+            "Programming"
+        ],
         "ImageLink": "Certificates images/Python by HackerRank.png",
         "Provider": "HackerRank",
         "WebSiteLink": ""
     },
     {
         "title": "Problem Solving by HackerRank",
-        "skills": ["Problem Solving", "Programming"],
+        "skills": [
+            "Problem Solving",
+            "Programming"
+        ],
         "ImageLink": "Certificates images/Problem Solving by HackerRank.png",
         "Provider": "HackerRank",
         "WebSiteLink": ""
     },
     {
         "title": "ACPC 2024",
-        "skills": ["Competitive Programming"],
+        "skills": [
+            "Competitive Programming"
+        ],
         "ImageLink": "Certificates images/ACPC 2024.png",
         "Provider": "ICPC",
         "WebSiteLink": ""
     },
     {
         "title": "TCPC 2024",
-        "skills": ["Competitive Programming"],
+        "skills": [
+            "Competitive Programming"
+        ],
         "ImageLink": "Certificates images/TCPC 2024.png",
         "Provider": "ICPC",
         "WebSiteLink": ""
     },
     {
         "title": "TCPC 2023",
-        "skills": ["Competitive Programming"],
+        "skills": [
+            "Competitive Programming"
+        ],
         "ImageLink": "Certificates images/TCPC 2023.png",
         "Provider": "ICPC",
         "WebSiteLink": ""
     },
     {
         "title": "Meta Hacker Cup 2024",
-        "skills": ["Competitive Programming"],
+        "skills": [
+            "Competitive Programming"
+        ],
         "ImageLink": "Certificates images/Meta Hacker CUP 2024.png",
         "Provider": "Meta",
         "WebSiteLink": ""
     },
     {
         "title": "Meta Hacker Cup 2023",
-        "skills": ["Competitive Programming"],
+        "skills": [
+            "Competitive Programming"
+        ],
         "ImageLink": "Certificates images/Meta Hacker CUP 2023.png",
         "Provider": "Meta",
         "WebSiteLink": ""
     },
     {
         "title": "Geeks Hack 3.0 CP Hackathon",
-        "skills": ["Hackathon", "Competitive Programming"],
+        "skills": [
+            "Hackathon",
+            "Competitive Programming"
+        ],
         "ImageLink": "Certificates images/Geeks Hack  3.0 CP Hackaton.png",
         "Provider": "geeksensit",
         "WebSiteLink": ""
     },
     {
         "title": "ISI Local Contest",
-        "skills": ["Competitive Programming", "Algorithm"],
+        "skills": [
+            "Competitive Programming",
+            "Algorithm"
+        ],
         "ImageLink": "Certificates images/ISI Local Contest by Freeways.png",
         "Provider": "Freeways",
         "WebSiteLink": ""
     },
     {
         "title": "SolveIT CP Competition",
-        "skills": ["Competitive Programming"],
+        "skills": [
+            "Competitive Programming"
+        ],
         "ImageLink": "Certificates images/SolveIT Cp Compeition by ACM Esprit.png",
         "Provider": "acm",
         "WebSiteLink": ""
     },
     {
         "title": "Winter Cup 6.0",
-        "skills": ["Competitive Programming"],
+        "skills": [
+            "Competitive Programming"
+        ],
         "ImageLink": "Certificates images/Winter CUP CP competition by ACM INSAT 6.0 .png",
         "Provider": "acm",
         "WebSiteLink": ""
     },
     {
         "title": "Winter Cup 5.0",
-        "skills": ["Competitive Programming"],
+        "skills": [
+            "Competitive Programming"
+        ],
         "ImageLink": "Certificates images/Winter CUP CP competition by ACM INSAT 5.0 .png",
         "Provider": "acm",
         "WebSiteLink": ""
     },
     {
         "title": "Marketing Vice President at Tunivision",
-        "skills": ["Marketing", "Leadership"],
+        "skills": [
+            "Marketing",
+            "Leadership"
+        ],
         "ImageLink": "Certificates images/Marketing Vice President at Tunivision Certificate.png",
         "Provider": "Tunivisions",
         "WebSiteLink": ""
     },
     {
         "title": "Membership Certificate — TIMUN Ezzahra",
-        "skills": ["Leadership", "Organization"],
+        "skills": [
+            "Leadership",
+            "Organization"
+        ],
         "ImageLink": "Certificates images/Membershiphh certificate TIMUN Ezzahra.png",
         "Provider": "un",
         "WebSiteLink": ""
     },
     {
         "title": "General secretary in charge of Marketing at TIMUN",
-        "skills": ["Leadership", "Organization"],
+        "skills": [
+            "Leadership",
+            "Organization"
+        ],
         "ImageLink": "Certificates images/General secretary in charge of Marketing Certificate.png",
         "Provider": "un",
         "WebSiteLink": ""
     },
     {
         "title": "DELF B2",
-        "skills": ["French", "Language Proficiency"],
+        "skills": [
+            "French",
+            "Language Proficiency"
+        ],
         "ImageLink": "Certificates images/DELF B2.png",
         "Provider": "France",
         "WebSiteLink": ""
     },
     {
         "title": "DELF B2 2.0",
-        "skills": ["French", "Language Proficiency"],
+        "skills": [
+            "French",
+            "Language Proficiency"
+        ],
         "ImageLink": "Certificates images/DELF B2 2.0.png",
         "Provider": "France",
         "WebSiteLink": ""

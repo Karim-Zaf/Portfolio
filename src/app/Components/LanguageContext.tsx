@@ -112,6 +112,8 @@ const STRINGS: Record<SupportedLang, Record<string, string>> = {
     videoediting_p2: "In high school, I edited videos for events organized by school clubs, capturing special moments and telling stories through my edits. My love for cinema and storytelling kept growing, and I eventually started freelancing on Upwork, helping clients create exciting and engaging videos.",
     videoediting_p3: "Video editing has always been my way of turning ideas into visual stories that people can connect with.",
     // YouTube
+    tcpc_2026_title: "TCPC 2026",
+    acpc_2025_title: "ACPC 2025",
     yt_section_title: "YouTube Content",
     yt_section_subtitle: "Watch vlogs, problem corrections, and competitive programming content on my channel.",
     yt_acpc_vlog_title: "ACPC 2025 Vlog",
@@ -220,6 +222,8 @@ const STRINGS: Record<SupportedLang, Record<string, string>> = {
     videoediting_p2: "Au lycée, j'ai monté des vidéos pour des événements organisés par des clubs scolaires, capturant des moments forts et racontant des histoires à travers mes montages. Mon amour pour le cinéma et la narration a grandi, et j'ai fini par faire du freelancing sur Upwork, en aidant des clients à créer des vidéos attrayantes et engageantes.",
     videoediting_p3: "Le montage vidéo a toujours été pour moi un moyen de transformer des idées en histoires visuelles auxquelles les gens peuvent s'identifier.",
     // YouTube
+    tcpc_2026_title: "TCPC 2026",
+    acpc_2025_title: "ACPC 2025",
     yt_section_title: "Contenu YouTube",
     yt_section_subtitle: "Regardez des vlogs, corrections de problèmes et du contenu de programmation compétitive sur ma chaîne.",
     yt_acpc_vlog_title: "Vlog ACPC 2025",
